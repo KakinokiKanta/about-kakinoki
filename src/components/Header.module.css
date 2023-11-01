@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home {
+  font-size: 70px;
+}
+
+.items {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  padding: 1rem 1.2rem;
+  font-size: 30px;
+  cursor: pointer;
+}

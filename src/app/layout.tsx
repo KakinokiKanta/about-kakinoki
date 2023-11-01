@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "@/lib/fontManager";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Kakinoki Kanta",
@@ -10,7 +11,10 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="jp">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 };
