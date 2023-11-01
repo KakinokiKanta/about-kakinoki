@@ -10,12 +10,16 @@ export const HomeImage = () => {
   );
 
   return (
-    <Image
-      className={styles.image}
-      src={profileImage}
-      alt="Photo for self-introduction"
-      width={1000}
-      height={650}
-    />
+    <div className={styles.parent}>
+      <Image
+        className={styles.image}
+        src={profileImage}
+        alt="Photo for self-introduction"
+        fill
+        style={{
+          objectFit: "cover",
+        }}
+      />
+    </div>
   );
 };

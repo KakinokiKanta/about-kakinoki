@@ -3,3 +3,14 @@
   width: 100%;
   justify-content: center;
 }
+
+.vercel {
+  display: table;
+  margin: 20px;
+}
+
+.home {
+  font-size: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
