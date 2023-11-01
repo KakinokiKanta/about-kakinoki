@@ -1,4 +1,4 @@
-import { HomeImage } from "@/components/HomeImage";
+import { HomeImage } from "@/app/_components/HomeImage";
 import styles from "./HomeTop.module.css";
 import { AlumiSansCollegiateOne } from "@/lib/fontManager";
 
