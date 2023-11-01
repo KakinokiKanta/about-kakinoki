@@ -3,10 +3,12 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home {
   font-size: 70px;
+  color: #fff;
 }
 
 .items {
@@ -20,4 +22,6 @@
   padding: 1rem 1.2rem;
   font-size: 30px;
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }

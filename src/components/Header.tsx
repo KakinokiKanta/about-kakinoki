@@ -6,12 +6,13 @@ export const Header = () => {
   return (
     <header>
       <div className={styles.container}>
+        {/* フォントを変える */}
         <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki Kanta
         </div>
         <div className={styles.items}>
-          <Link href="/">
-            <div className={styles.link}>Home</div>
+          <Link href="/" className={styles.link}>
+            Home
           </Link>
         </div>
       </div>
