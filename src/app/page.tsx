@@ -1,16 +1,15 @@
-import Image from "next/image";
+import { HomeImage } from "@/components/HomeImage";
+import styles from "./Page.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
-      <h1>Kakinoki Kanta</h1>
-      <Image
-        src="/home_imgs/travel_back.JPG"
-        alt="Photo for self-introduction"
-        width={1280}
-        height={960}
-        priority
-      ></Image>
+      <div className={styles.container}>
+        <h1>Kakinoki Kanta</h1>
+        <HomeImage />
+      </div>
     </main>
   );
-}
+};
+
+export default Home;
