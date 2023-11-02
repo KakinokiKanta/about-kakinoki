@@ -13,14 +13,13 @@
 
 .items {
   display: flex;
-  width: 60%;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .link {
   padding: 1rem 1.2rem;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
