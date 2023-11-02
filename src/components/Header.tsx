@@ -12,7 +12,7 @@ export const Header = () => {
   ];
 
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.container}>
         <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki Kanta
