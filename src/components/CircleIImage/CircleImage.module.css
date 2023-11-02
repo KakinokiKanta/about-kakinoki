@@ -1,0 +1,12 @@
+.parent {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  /* position: relative !important; */
+  background-color: #000;
+}

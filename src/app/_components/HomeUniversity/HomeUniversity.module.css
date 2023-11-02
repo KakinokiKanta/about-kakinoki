@@ -1,0 +1,37 @@
+.section {
+  /* text-align: center; */
+  margin: 5rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.vercel {
+  width: 37%;
+  display: table;
+  /* margin: 20px; */
+}
+
+.home {
+  font-size: 50px;
+  /* color: #fff; */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.head {
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+
+.description {
+  font: bold;
+  font-size: 20px;
+  margin: 1rem 0;
+}

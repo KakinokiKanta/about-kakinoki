@@ -11,10 +11,10 @@ export const HomeAbout = () => {
         プログラミングは大学から始め、最近はRSCの勉強をしています。
       </p>
       <p className={styles.description}>
-        普段は研究したり、ETロボコンの活動したりって感じです。
+        普段は主に、研究、講義、ロボコン、アルバイト、ボランティアなどを行っています。
       </p>
       <p className={styles.description}>
-        趣味はサッカー観戦です。ラリーガや代表戦はフルで観ることも多いです。
+        趣味はサッカー観戦やテニス、ゲーム、アニメ鑑賞です。
       </p>
       <LinkButton href="/about" />
     </section>
