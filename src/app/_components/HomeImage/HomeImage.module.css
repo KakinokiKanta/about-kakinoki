@@ -1,11 +1,13 @@
 .parent {
   position: relative;
-  width: 55%;
-  height: 800px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .image {
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: black;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  position: relative !important;
+  width: 100%;
+  background-color: #000;
 }

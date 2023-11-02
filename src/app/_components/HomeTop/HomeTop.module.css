@@ -1,17 +1,19 @@
 .container {
-  display: flex;
+  position: relative;
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .vercel {
+  position: absolute;
   display: table;
   margin: 20px;
+  z-index: 10;
 }
 
 .home {
   font-size: 200px;
-  color: rgb(255, 80, 0);
+  color: #fff;
   display: table-cell;
   vertical-align: middle;
 }
