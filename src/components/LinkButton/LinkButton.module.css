@@ -1,0 +1,11 @@
+.link {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 30px;
+  margin-bottom: 1rem;
+  border-radius: 100px;
+  border: none;
+  background-color: #f80;
+  text-decoration: none;
+  cursor: pointer;
+}

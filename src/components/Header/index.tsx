@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { AlumiSansCollegiateOne } from "@/lib/fontManager";
+import { alumiSansCollegiateOne } from "@/lib/fontManager";
 
 export const Header = () => {
   const HEADER_ITEMS = [
@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
+        <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki
         </div>
         <div className={styles.items}>
