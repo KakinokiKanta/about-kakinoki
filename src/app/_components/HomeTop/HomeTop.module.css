@@ -13,7 +13,7 @@
 }
 
 .home {
-  font-size: 200px;
+  font-size: clamp(30px, calc(100vw / 8), 200px);
   color: #fff;
   display: table-cell;
   vertical-align: middle;

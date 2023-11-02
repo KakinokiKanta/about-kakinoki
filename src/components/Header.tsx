@@ -15,7 +15,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
-          Kakinoki Kanta
+          Kakinoki
         </div>
         <div className={styles.items}>
           {HEADER_ITEMS.map((item) => {

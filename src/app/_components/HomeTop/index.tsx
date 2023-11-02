@@ -4,15 +4,17 @@ import { AlumiSansCollegiateOne } from "@/lib/fontManager";
 
 export const HomeTop = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.vercel}>
-        <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
-          Kakinoki
-          <br />
-          Kanta
+    <section>
+      <div className={styles.container}>
+        <div className={styles.vercel}>
+          <div className={`${AlumiSansCollegiateOne.className} ${styles.home}`}>
+            Kakinoki
+            <br />
+            Kanta
+          </div>
         </div>
+        <HomeImage />
       </div>
-      <HomeImage />
-    </div>
+    </section>
   );
 };
