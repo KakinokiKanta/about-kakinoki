@@ -4,7 +4,7 @@ import { alumiSansCollegiateOne } from "@/lib/fontManager";
 
 export const HomeTop = () => {
   return (
-    <section>
+    <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.vercel}>
           <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
