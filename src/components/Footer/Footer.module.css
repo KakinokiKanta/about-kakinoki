@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #f80;
   color: #fff;
+  padding: 60px 0;
 }
 
 .container {
@@ -10,4 +11,47 @@
   max-width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vercel {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 60px;
+  width: 45%;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.links {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  padding: 3px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }

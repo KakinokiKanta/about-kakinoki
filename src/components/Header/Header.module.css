@@ -15,7 +15,7 @@
 
 .home {
   margin: 0 1.2rem;
-  font-size: 70px;
+  font-size: 60px;
   color: #f80;
 }
 
@@ -28,6 +28,7 @@
 .link {
   padding: 1rem 1.2rem;
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   color: #fff;
   text-decoration: none;

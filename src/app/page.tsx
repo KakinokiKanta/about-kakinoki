@@ -1,7 +1,6 @@
 import { HomeTop } from "@/app/_components/HomeTop";
 import { HomeAbout } from "@/app/_components/HomeAbout";
 import { HomeContent } from "./_components/HomeContent";
-import { Footer } from "@/components/Footer";
 
 const Home = () => {
   const HOME_CONTENTS = [
@@ -36,7 +35,6 @@ const Home = () => {
       {HOME_CONTENTS.map((item) => {
         return <HomeContent {...item} key={item.h2} />;
       })}
-      <Footer />
     </main>
   );
 };
