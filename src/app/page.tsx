@@ -1,6 +1,7 @@
 import { HomeTop } from "@/app/_components/HomeTop";
 import { HomeAbout } from "@/app/_components/HomeAbout";
 import { HomeContent } from "./_components/HomeContent";
+import { Footer } from "@/components/Footer";
 
 const Home = () => {
   const HOME_CONTENTS = [
@@ -21,7 +22,7 @@ const Home = () => {
       h2: "University",
       p: [
         "学部生の頃は、工学部の情報システム工学科に在籍していました。現在は、工学研究科に在籍しています。",
-        "プログラミング演習を始め、様々な講義でプログラミングを学んでいます。講義の約8割でC言語を使用します。",
+        "演習を始め、様々な講義でプログラミングを学んでいます。講義の約8割でC言語を使用します。",
         "学部卒業時の成績は、学科次席でした。",
       ],
       link: "/university",
@@ -35,6 +36,7 @@ const Home = () => {
       {HOME_CONTENTS.map((item) => {
         return <HomeContent {...item} key={item.h2} />;
       })}
+      <Footer />
     </main>
   );
 };

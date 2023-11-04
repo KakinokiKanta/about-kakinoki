@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  background-color: #f80;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
