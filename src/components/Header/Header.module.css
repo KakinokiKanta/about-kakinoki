@@ -33,3 +33,9 @@
   color: #fff;
   text-decoration: none;
 }
+
+@media (width <= 768px) {
+  .home {
+    font-size: 48px;
+  }
+}

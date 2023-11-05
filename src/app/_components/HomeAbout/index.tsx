@@ -14,9 +14,6 @@ export const HomeAbout = () => {
         <p className={styles.description}>
           普段は主に、研究、講義、ロボコン、アルバイト、ボランティアなどを行っています。
         </p>
-        <p className={styles.description}>
-          趣味はサッカー観戦やテニス、ゲーム、アニメ鑑賞です。
-        </p>
         <LinkButton href="/about" />
       </div>
     </section>

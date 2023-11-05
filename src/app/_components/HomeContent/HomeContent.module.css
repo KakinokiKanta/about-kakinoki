@@ -41,7 +41,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 16px;
   margin: 1rem 0;
 }
 
@@ -65,7 +65,6 @@
   }
 
   .description {
-    font-size: 18px;
     margin: 1rem 0;
   }
 }

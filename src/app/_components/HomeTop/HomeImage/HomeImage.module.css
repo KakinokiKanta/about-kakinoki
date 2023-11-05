@@ -11,3 +11,9 @@
   width: 100%;
   background-color: #000;
 }
+
+@media (width <= 768px) {
+  .parent {
+    aspect-ratio: 1 / 1;
+  }
+}

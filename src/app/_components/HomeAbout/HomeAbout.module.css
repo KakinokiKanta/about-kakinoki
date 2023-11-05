@@ -16,7 +16,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 16px;
   margin: 1rem;
 }
 
@@ -27,7 +27,6 @@
   }
 
   .description {
-    font-size: 18px;
     margin: 1rem;
   }
 }

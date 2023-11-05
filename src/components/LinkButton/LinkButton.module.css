@@ -1,5 +1,5 @@
 .link {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   padding: 10px 30px;
   margin: 3rem;
@@ -8,4 +8,10 @@
   background-color: #f80;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (width <= 768px) {
+  .link {
+    margin: 1rem;
+  }
 }
