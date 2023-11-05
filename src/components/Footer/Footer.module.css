@@ -48,10 +48,16 @@
 }
 
 .link {
-  padding: 3px 0;
+  margin: 3px 0;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
+}
+
+.copyright {
+  /* font-size: smaller; */
+  width: 100%;
+  margin-top: 50px;
 }
