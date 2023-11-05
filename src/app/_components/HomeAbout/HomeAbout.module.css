@@ -16,6 +16,17 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 16px;
   margin: 1rem;
+}
+
+@media (width <= 768px) {
+  .head {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    margin: 1rem;
+  }
 }

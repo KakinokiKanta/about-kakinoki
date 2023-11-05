@@ -4,7 +4,16 @@
   margin-bottom: 5rem;
 }
 
-.container {
+.lcontainer {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.rcontainer {
   width: 90%;
   max-width: 1100px;
   display: flex;
@@ -32,6 +41,30 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 16px;
   margin: 1rem 0;
+}
+
+/* Mobile and Tablet */
+@media (width <= 768px) {
+  .vercel {
+    width: 100%;
+  }
+
+  .lcontainer {
+    flex-direction: column;
+  }
+
+  .rcontainer {
+    flex-direction: column-reverse;
+  }
+
+  .head {
+    font-size: 32px;
+    margin: 2rem 0;
+  }
+
+  .description {
+    margin: 1rem 0;
+  }
 }
