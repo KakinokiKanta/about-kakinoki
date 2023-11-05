@@ -10,3 +10,10 @@
   /* position: relative !important; */
   background-color: #000;
 }
+
+/* Mobile and Tablet */
+@media (width <= 768px) {
+  .parent {
+    width: 80%;
+  }
+}
