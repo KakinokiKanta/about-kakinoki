@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+  top: 70px;
   width: 100%;
   background-color: #f80;
   color: #fff;

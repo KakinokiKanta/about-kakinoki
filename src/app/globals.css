@@ -7,7 +7,13 @@ html {
   background-color: #f5f5f5;
 }
 
+main {
+  position: relative;
+  top: 70px;
+}
+
 section {
-  max-width: 1400px;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
 }

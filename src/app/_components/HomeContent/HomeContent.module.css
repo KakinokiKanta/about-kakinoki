@@ -5,8 +5,8 @@
 }
 
 .lcontainer {
-  width: 90%;
-  max-width: 1100px;
+  /* width: 90%;
+  max-width: 1100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +14,8 @@
 }
 
 .rcontainer {
-  width: 90%;
-  max-width: 1100px;
+  /* width: 90%;
+  max-width: 1100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
