@@ -23,10 +23,13 @@
   color: #f80;
 }
 
-.items {
+.nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
 }
 
 .link {
@@ -51,8 +54,11 @@
     font-size: 48px;
   }
 
-  .items {
-    display: none;
+  .nav {
+    /* display: none; */
+    padding-top: 58px;
+    width: 100%;
+    height: 100vh;
   }
 
   .humburger {

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HEADER_ITEMS } from "../Header";
 import styles from "./Footer.module.css";
 import { alumiSansCollegiateOne } from "@/lib/fontManager";
+import { HEADER_ITEMS } from "@/utils/links";
 
 export const Footer = () => {
   const ICONS_PATH = [

@@ -1,35 +1,39 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./Header.module.css";
 import { alumiSansCollegiateOne } from "@/lib/fontManager";
 import { Menu } from "../Icons";
-
-export const HEADER_ITEMS = [
-  { href: "/", label: "HOME" },
-  { href: "/about", label: "ABOUT" },
-  { href: "/etrobo", label: "ETROBOCON" },
-  { href: "/university", label: "UNIVERSITY" },
-  // { href: "/volunteer", label: "VOLUNTEER" },
-];
+import { HEADER_ITEMS } from "@/utils/links";
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki
         </div>
-        <nav className={styles.items}>
-          {HEADER_ITEMS.map((item) => {
-            return (
-              <Link href={item.href} className={styles.link} key={item.href}>
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
-        <div className={styles.humburger}>
-          <Menu />
+        {/* <div className={styles.items}> */}
+        <div className={styles.humburger} onClick={() => setIsOpen(!isOpen)}>
+          <Menu isOpen={isOpen} />
         </div>
+        <nav className={styles.nav}>
+          <ul className={styles.ul}>
+            {HEADER_ITEMS.map((item) => {
+              return (
+                <li key={item.href}>
+                  <Link href={item.href} className={styles.link}>
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        {/* </div> */}
       </div>
     </header>
   );
