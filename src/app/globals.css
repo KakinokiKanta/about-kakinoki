@@ -1,3 +1,8 @@
+:root {
+  --icon-width: 4px;
+  --icon-color: #f80;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +21,10 @@ section {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+@media (width <= 768px) {
+  main {
+    margin-top: 58px;
+  }
 }

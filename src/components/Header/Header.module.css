@@ -38,8 +38,25 @@
   text-decoration: none;
 }
 
+.humburger {
+  display: none;
+}
+
 @media (width <= 768px) {
+  .header {
+    height: 58px;
+  }
+
   .home {
     font-size: 48px;
+  }
+
+  .items {
+    display: none;
+  }
+
+  .humburger {
+    display: block;
+    margin: 0 1.2rem;
   }
 }

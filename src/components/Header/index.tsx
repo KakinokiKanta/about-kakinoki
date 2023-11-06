@@ -1,13 +1,14 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { alumiSansCollegiateOne } from "@/lib/fontManager";
+import { Menu } from "../Icons";
 
 export const HEADER_ITEMS = [
   { href: "/", label: "HOME" },
   { href: "/about", label: "ABOUT" },
   { href: "/etrobo", label: "ETROBOCON" },
   { href: "/university", label: "UNIVERSITY" },
-  { href: "/volunteer", label: "VOLUNTEER" },
+  // { href: "/volunteer", label: "VOLUNTEER" },
 ];
 
 export const Header = () => {
@@ -17,7 +18,7 @@ export const Header = () => {
         <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki
         </div>
-        <div className={styles.items}>
+        <nav className={styles.items}>
           {HEADER_ITEMS.map((item) => {
             return (
               <Link href={item.href} className={styles.link} key={item.href}>
@@ -25,6 +26,9 @@ export const Header = () => {
               </Link>
             );
           })}
+        </nav>
+        <div className={styles.humburger}>
+          <Menu />
         </div>
       </div>
     </header>
