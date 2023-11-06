@@ -17,11 +17,12 @@
 .vercel {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 .name {
   font-size: 60px;
-  width: 45%;
+  width: 100%;
 }
 
 .subtitle {
@@ -60,4 +61,22 @@
   /* font-size: smaller; */
   width: 100%;
   margin-top: 50px;
+}
+
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+  }
+
+  .vercel {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+  }
 }
