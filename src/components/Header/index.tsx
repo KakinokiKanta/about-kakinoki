@@ -20,11 +20,11 @@ export const Header = () => {
         <div className={styles.humburger} onClick={() => setIsOpen(!isOpen)}>
           <Menu isOpen={isOpen} />
         </div>
-        <nav className={styles.nav}>
+        <nav className={isOpen ? styles.nav : styles.nonav}>
           <ul className={styles.ul}>
             {HEADER_ITEMS.map((item) => {
               return (
-                <li key={item.href}>
+                <li key={item.href} className={styles.li}>
                   <Link href={item.href} className={styles.link}>
                     {item.label}
                   </Link>

@@ -24,7 +24,7 @@
 }
 
 .nav {
-  display: flex;
+  position: relative;
 }
 
 .ul {
@@ -54,11 +54,32 @@
     font-size: 48px;
   }
 
+  .nonav {
+    display: none;
+  }
+
   .nav {
-    /* display: none; */
-    padding-top: 58px;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 58px);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .ul {
+    display: block;
+    text-align: center;
+    margin: 3rem;
+  }
+
+  .li {
+    margin: 3rem;
+  }
+
+  .link {
+    color: #fff;
+    margin: 3rem;
   }
 
   .humburger {
