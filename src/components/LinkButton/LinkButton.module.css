@@ -1,13 +1,29 @@
 .link {
+  position: relative;
   font-size: 16px;
   color: #fff;
   padding: 10px 30px;
   margin: 3rem;
   border-radius: 100px;
   border: none;
-  background-color: #f80;
+  /* background-color: #f80; */
+  /* 背景色のグラデーションを設定（初期の左から右への色の変化） */
+  background-image: linear-gradient(to right, #fff 50%, #f80 50%);
+  background-size: 200% auto;
+  background-position: 100%;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    /* background-color: #fff; */
+    /* transition: all 0.5s; */
+    color: #f80;
+    background-position: 0;
+  }
 }
 
 @media (width <= 768px) {
