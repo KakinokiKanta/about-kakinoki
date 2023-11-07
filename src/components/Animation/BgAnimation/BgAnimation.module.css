@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  z-index: -1;
+}
+
+.bgTop {
+  position: inherit;
+  display: flex;
+  top: 0;
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.img {
+  width: auto !important;
+  height: 100%;
+}
+
+.img:first-child {
+  animation: loopFirst 50s -25s linear infinite;
+}
+
+.img:last-child {
+  animation: loopSecond 50s linear infinite;
+}
+
+@keyframes loopFirst {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loopSecond {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}

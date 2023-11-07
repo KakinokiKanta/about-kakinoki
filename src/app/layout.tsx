@@ -3,6 +3,7 @@ import "./globals.css";
 import { inter } from "@/lib/fontManager";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { BgAnimation } from "@/components/Animation/BgAnimation";
 
 export const metadata: Metadata = {
   title: "Kakinoki Kanta",
@@ -15,6 +16,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={inter.className}>
         <Header />
         {children}
+        <BgAnimation />
         <Footer />
       </body>
     </html>
