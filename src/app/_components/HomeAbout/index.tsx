@@ -6,7 +6,7 @@ export const HomeAbout = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <H2Animation title="ABOUT ME" />
+        <H2Animation title="ABOUT ME" animation="fadein" />
         <p className={styles.description}>宮崎大学の修士1年生です。</p>
         <p className={styles.description}>
           プログラミングは大学から始め、最近はRSCの勉強をしています。

@@ -2,6 +2,7 @@ import { CircleImage } from "@/components/CircleIImage";
 import styles from "./HomeContent.module.css";
 import { rowdies } from "@/lib/fontManager";
 import { LinkButton } from "@/components/LinkButton";
+import { H2Animation } from "@/components/H2Animattion";
 
 type HomeContentProps = {
   is_image_left: boolean;
@@ -19,9 +20,7 @@ export const HomeContent = (props: HomeContentProps) => {
         <div className={styles.lcontainer}>
           <CircleImage image_path={props.image_path} />
           <div className={styles.vercel}>
-            <h2 className={`${rowdies.className} ${styles.head}`}>
-              {props.h2}
-            </h2>
+            <H2Animation title={props.h2} animation="slideright" />
             {props.p.map((item) => {
               return (
                 <p className={styles.description} key={item}>
@@ -37,9 +36,7 @@ export const HomeContent = (props: HomeContentProps) => {
       {!props.is_image_left && (
         <div className={styles.rcontainer}>
           <div className={styles.vercel}>
-            <h2 className={`${rowdies.className} ${styles.head}`}>
-              {props.h2}
-            </h2>
+            <H2Animation title={props.h2} animation="slideleft" />
             {props.p.map((item) => {
               return (
                 <p className={styles.description} key={item}>
