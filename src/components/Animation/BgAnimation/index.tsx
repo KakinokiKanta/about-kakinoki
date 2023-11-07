@@ -27,82 +27,62 @@ export const BgAnimation = () => {
     <div className={styles.container}>
       <div className={styles.bgTop}>
         <ul className={`${styles.list} ${styles.listLoop}`}>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[0]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[1]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[2]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[3]}`}
-              fill
-              alt="C"
-            />
-          </li>
+          {TECH_STACK_ICONS.top.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
         </ul>
         <ul className={`${styles.list} ${styles.listLoop}`}>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[0]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[1]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[2]}`}
-              fill
-              alt="C"
-            />
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              src={`${TECH_STACK_ICONS.top[3]}`}
-              fill
-              alt="C"
-            />
-          </li>
+          {TECH_STACK_ICONS.top.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className={styles.bgMiddle}>
-        <ul className={styles.list}>
-          <li className={styles.item}></li>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
+          {TECH_STACK_ICONS.middle.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
+        </ul>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
+          {TECH_STACK_ICONS.middle.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className={styles.bgBottom}>
-        <ul className={styles.list}>
-          <li className={styles.item}></li>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
+          {TECH_STACK_ICONS.bottom.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
+        </ul>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
+          {TECH_STACK_ICONS.bottom.map((item) => {
+            return (
+              <li className={styles.item} key={item}>
+                <Image className={styles.img} src={item} fill alt="" />
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
