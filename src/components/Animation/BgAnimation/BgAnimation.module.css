@@ -1,0 +1,58 @@
+.container {
+  position: fixed;
+  z-index: -1;
+}
+
+.bgTop {
+  position: inherit;
+  display: flex;
+  top: 10vh;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.bgMiddle {
+  position: inherit;
+  display: flex;
+  top: 40vh;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.bgBottom {
+  position: inherit;
+  display: flex;
+  top: 70vh;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.listLoop {
+  animation: loop 80s infinite linear 0.5s both;
+}
+
+.item {
+  position: relative;
+  width: calc(100vw / 4);
+  margin: 0 10px;
+}
+
+.img {
+  width: 100%;
+  opacity: 0.03;
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

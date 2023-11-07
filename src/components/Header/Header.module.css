@@ -33,12 +33,29 @@
 }
 
 .link {
+  position: relative;
+  display: inline-block;
   margin: 1rem 1.2rem;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   color: #000;
   text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f80;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .humburger {
@@ -73,13 +90,9 @@
     margin: 3rem;
   }
 
-  .li {
-    margin: 3rem;
-  }
-
   .link {
     color: #fff;
-    margin: 3rem;
+    margin: 2rem;
   }
 
   .humburger {

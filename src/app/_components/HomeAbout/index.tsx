@@ -1,12 +1,12 @@
 import { LinkButton } from "@/components/LinkButton";
+import { H2Animation } from "@/components/Animation/H2Animattion";
 import styles from "./HomeAbout.module.css";
-import { rowdies } from "@/lib/fontManager";
 
 export const HomeAbout = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={`${styles.head} ${rowdies.className}`}>ABOUT ME</h2>
+        <H2Animation title="ABOUT ME" animation="fadein" />
         <p className={styles.description}>宮崎大学の修士1年生です。</p>
         <p className={styles.description}>
           プログラミングは大学から始め、最近はRSCの勉強をしています。

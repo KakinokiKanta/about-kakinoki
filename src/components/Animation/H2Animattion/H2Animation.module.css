@@ -1,0 +1,35 @@
+.title {
+  opacity: 0;
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+
+.fadein {
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideleft {
+  transform: translateX(-20%);
+  animation: slideInAnimation 1s forwards;
+}
+
+.slideright {
+  transform: translateX(20%);
+  animation: slideInAnimation 1s forwards;
+}
+
+@keyframes slideInAnimation {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
