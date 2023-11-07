@@ -43,13 +43,17 @@ export const Footer = () => {
         </div>
         <div className={styles.links}>
           <div className={styles.subtitle}>MENU</div>
-          {HEADER_ITEMS.map((item) => {
-            return (
-              <Link href={item.href} className={styles.link} key={item.label}>
-                {item.label}
-              </Link>
-            );
-          })}
+          <ul className={styles.ul}>
+            {HEADER_ITEMS.map((item) => {
+              return (
+                <li key={item.label}>
+                  <Link href={item.href} className={styles.link}>
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <p className={styles.copyright}>
           &copy; {new Date().getFullYear()} Kakinoki

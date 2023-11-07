@@ -56,13 +56,35 @@
   flex-direction: column;
 }
 
+.ul {
+  list-style: none;
+}
+
 .link {
+  position: relative;
+  display: inline-block;
   margin: 3px 0;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  /* padding-bottom: 4px; */
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .copyright {
