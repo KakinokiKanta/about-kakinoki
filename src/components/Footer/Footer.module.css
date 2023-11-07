@@ -42,6 +42,12 @@
 
 .icon {
   margin-right: 20px;
+  transform: scale(1);
+}
+
+.icon:hover {
+  size: 120%;
+  transform: scale(1.1);
 }
 
 .links {
