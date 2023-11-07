@@ -1,0 +1,20 @@
+.title {
+  opacity: 0;
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+  /* animation-delay: 0.5s; アニメーションの遅延（任意） */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -5,14 +5,7 @@
 }
 
 .container {
-  /* width: 90%;
-  max-width: 1100px; */
   margin: 0 auto;
-}
-
-.head {
-  font-size: 48px;
-  margin-bottom: 3rem;
 }
 
 .description {
@@ -25,8 +18,4 @@
     font-size: 32px;
     margin-bottom: 2rem;
   }
-
-  /* .description {
-    margin: 1rem;
-  } */
 }
