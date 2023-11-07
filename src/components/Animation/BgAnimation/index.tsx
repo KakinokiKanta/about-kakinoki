@@ -26,7 +26,7 @@ export const BgAnimation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.bgTop}>
-        <ul className={styles.list}>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
           <li className={styles.item}>
             <Image
               className={styles.img}
@@ -60,7 +60,7 @@ export const BgAnimation = () => {
             />
           </li>
         </ul>
-        <ul className={styles.list}>
+        <ul className={`${styles.list} ${styles.listLoop}`}>
           <li className={styles.item}>
             <Image
               className={styles.img}

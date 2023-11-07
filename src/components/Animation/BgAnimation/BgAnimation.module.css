@@ -6,39 +6,35 @@
 .bgTop {
   position: inherit;
   display: flex;
-  top: 0;
-  width: 100vw;
-  height: 30vh;
+  top: 100px;
+  height: 25vh;
   overflow: hidden;
 }
 
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.listLoop {
+  animation: loop 80s infinite linear 0.5s both;
+}
+
+.item {
+  position: relative;
+  width: calc(100vw / 4);
+}
+
 .img {
-  width: auto !important;
-  height: 100%;
+  width: 100%;
 }
 
-.img:first-child {
-  animation: loopFirst 50s -25s linear infinite;
-}
-
-.img:last-child {
-  animation: loopSecond 50s linear infinite;
-}
-
-@keyframes loopFirst {
-  0% {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes loopSecond {
-  0% {
+@keyframes loop {
+  from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
 }
