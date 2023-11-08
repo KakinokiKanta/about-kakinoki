@@ -4,69 +4,54 @@ import styles from "./BgAnimation.module.css";
 export const BgAnimation = () => {
   const TECH_STACK_ICONS = [
     {
-      place: "top",
       style: styles.bgTop,
-      icons: [
-        {
-          image: "/stack_icons/bootstrap.svg",
-          alt: "bootstrap icon",
-        },
-        {
-          image: "/stack_icons/c-plusplus.svg",
-          alt: "c-plusplus icon",
-        },
-        {
-          image: "/stack_icons/c-sharp.svg",
-          alt: "c-sharp icon",
-        },
-        {
-          image: "/stack_icons/c.svg",
-          alt: "c icon",
-        },
+      image: [
+        "/stack_icons/bootstrap.svg",
+        "/stack_icons/c-plusplus.svg",
+        "/stack_icons/c-sharp.svg",
+        "/stack_icons/c.svg",
+        "/stack_icons/chrome.svg",
+        "/stack_icons/create-react-app.svg",
+        "/stack_icons/css-3.svg",
+        "/stack_icons/discord-icon.svg",
+        "/stack_icons/figma.svg",
+        "/stack_icons/firebase.svg",
+        "/stack_icons/flask.svg",
+        "/stack_icons/git-icon.svg",
       ],
     },
     {
-      place: "middle",
       style: styles.bgMiddle,
-      icons: [
-        {
-          image: "/stack_icons/chrome.svg",
-          alt: "chrome icon",
-        },
-        {
-          image: "/stack_icons/create-react-app.svg",
-          alt: "create-react-app icon",
-        },
-        {
-          image: "/stack_icons/css-3.svg",
-          alt: "css-3 icon",
-        },
-        {
-          image: "/stack_icons/discord-icon.svg",
-          alt: "discord icon",
-        },
+      image: [
+        "/stack_icons/github-actions.svg",
+        "/stack_icons/github-icon.svg",
+        "/stack_icons/html-5.svg",
+        "/stack_icons/javascript.svg",
+        "/stack_icons/microsoft-teams.svg",
+        "/stack_icons/mysql-icon.svg",
+        "/stack_icons/nextjs-icon.svg",
+        "/stack_icons/nodejs-icon.svg",
+        "/stack_icons/nodejs.svg",
+        "/stack_icons/notion-icon.svg",
+        "/stack_icons/npm-icon.svg",
+        "/stack_icons/php.svg",
       ],
     },
     {
-      place: "bottom",
       style: styles.bgBottom,
-      icons: [
-        {
-          image: "/stack_icons/figma.svg",
-          alt: "figma icon",
-        },
-        {
-          image: "/stack_icons/git-icon.svg",
-          alt: "git icon",
-        },
-        {
-          image: "/stack_icons/github-actions.svg",
-          alt: "github-actions icon",
-        },
-        {
-          image: "/stack_icons/github-icon.svg",
-          alt: "github icon",
-        },
+      image: [
+        "/stack_icons/postgresql.svg",
+        "/stack_icons/postman-icon.svg",
+        "/stack_icons/python.svg",
+        "/stack_icons/react.svg",
+        "/stack_icons/slack-icon.svg",
+        "/stack_icons/typescript-icon.svg",
+        "/stack_icons/unity.svg",
+        "/stack_icons/vercel.svg",
+        "/stack_icons/visual-studio-code.svg",
+        "/stack_icons/webpack.svg",
+        "/stack_icons/zenhub-icon.svg",
+        "/stack_icons/zoom-icon.svg",
       ],
     },
   ];
@@ -75,31 +60,21 @@ export const BgAnimation = () => {
     <div className={styles.container}>
       {TECH_STACK_ICONS.map((item) => {
         return (
-          <div className={item.style} key={item.place}>
+          <div className={item.style} key={"top"}>
             <ul className={`${styles.list} ${styles.listLoop}`}>
-              {item.icons.map((icon) => {
+              {item.image.map((icon) => {
                 return (
-                  <li className={styles.item} key={icon.image}>
-                    <Image
-                      className={styles.img}
-                      src={icon.image}
-                      fill
-                      alt={icon.alt}
-                    />
+                  <li className={styles.item} key={icon}>
+                    <Image className={styles.img} src={icon} fill alt="" />
                   </li>
                 );
               })}
             </ul>
             <ul className={`${styles.list} ${styles.listLoop}`}>
-              {item.icons.map((icon) => {
+              {item.image.map((icon) => {
                 return (
-                  <li className={styles.item} key={icon.image}>
-                    <Image
-                      className={styles.img}
-                      src={icon.image}
-                      fill
-                      alt={icon.alt}
-                    />
+                  <li className={styles.item} key={icon}>
+                    <Image className={styles.img} src={icon} fill alt="" />
                   </li>
                 );
               })}
