@@ -34,7 +34,7 @@
 }
 
 .listLoop {
-  animation: loop 90s infinite linear 0.5s both;
+  animation: loop 270s infinite linear 0.5s both;
 }
 
 .item {
@@ -45,7 +45,7 @@
 
 .img {
   width: 100%;
-  opacity: 0.05;
+  opacity: 0.03;
 }
 
 @keyframes loop {
