@@ -13,7 +13,13 @@
 
 .image {
   background-color: #000;
+  /* transform: scale(1); */
+  /* transition: transform 0.3s; */
 }
+
+/* .image:hover {
+  transform: scale(1.1);
+} */
 
 .h3 {
   margin: 1rem;
