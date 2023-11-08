@@ -34,7 +34,7 @@
 }
 
 .listLoop {
-  animation: loop 30s infinite linear 0.5s both;
+  animation: loop 90s infinite linear 0.5s both;
 }
 
 .item {
@@ -53,6 +53,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
 }
