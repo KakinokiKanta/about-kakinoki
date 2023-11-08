@@ -20,7 +20,7 @@ main {
 section {
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
 @media (width <= 768px) {
