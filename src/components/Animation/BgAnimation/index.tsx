@@ -70,7 +70,7 @@ export const BgAnimation = () => {
                 );
               })}
             </ul>
-            <ul className={`${styles.list} ${styles.listLoop}`}>
+            <ul className={`${styles.list} ${styles.listLoopSecond}`}>
               {item.image.map((icon) => {
                 return (
                   <li className={styles.item} key={icon}>
