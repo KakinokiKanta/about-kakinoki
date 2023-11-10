@@ -5,6 +5,16 @@
   background-color: #f5f5f5;
   margin: 10px auto;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  opacity: 0.8;
+}
+
+.container:hover .image {
+  transform: scale(1.1);
 }
 
 .parent {
@@ -14,13 +24,9 @@
 
 .image {
   background-color: #000;
-  /* transform: scale(1); */
-  /* transition: transform 0.3s; */
+  transform: scale(1);
+  transition: transform 0.3s;
 }
-
-/* .image:hover {
-  transform: scale(1.1);
-} */
 
 .h3 {
   margin: 1rem;
