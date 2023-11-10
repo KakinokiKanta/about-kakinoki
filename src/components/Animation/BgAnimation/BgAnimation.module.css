@@ -37,19 +37,19 @@
   animation: loop 90s infinite linear 0.5s both;
 }
 
-.listLoopSecond {
-  animation: loopSecond 30s infinite linear 0.5s both;
-}
+/* .listLoopSecond {
+  animation: loop 3s infinite linear 0.5s both;
+} */
 
 .item {
   position: relative;
   width: calc(100vw / 4);
+  margin: 0 10px;
 }
 
 .img {
   width: 100%;
   opacity: 0.04;
-  margin: 0 10px;
 }
 
 @keyframes loop {
@@ -61,11 +61,11 @@
   }
 }
 
-@keyframes loopSecond {
+/* @keyframes loopSecond {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
   }
-}
+} */
