@@ -16,7 +16,6 @@ export const Header = () => {
         <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
           Kakinoki
         </div>
-        {/* <div className={styles.items}> */}
         <div className={styles.humburger} onClick={() => setIsOpen(!isOpen)}>
           <Menu isOpen={isOpen} />
         </div>
@@ -25,7 +24,13 @@ export const Header = () => {
             {HEADER_ITEMS.map((item) => {
               return (
                 <li key={item.href} className={styles.li}>
-                  <Link href={item.href} className={styles.link}>
+                  <Link
+                    href={item.href}
+                    className={styles.link}
+                    onClick={(isOpen) => {
+                      setIsOpen(!isOpen);
+                    }}
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -33,7 +38,6 @@ export const Header = () => {
             })}
           </ul>
         </nav>
-        {/* </div> */}
       </div>
     </header>
   );
