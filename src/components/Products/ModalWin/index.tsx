@@ -4,6 +4,15 @@ import React from "react";
 
 type ModalWinProps = {
   clickEvent: (e: React.MouseEvent) => void;
+  title: string;
+  image: string;
+  alt: string;
+  description: string[];
+  tools: string[];
+  links: {
+    href: string;
+    kinds: string;
+  }[];
 };
 
 export const ModalWin = (props: ModalWinProps) => {
@@ -12,22 +21,26 @@ export const ModalWin = (props: ModalWinProps) => {
       <div className={styles.modal}>
         <div className={styles.content}>
           <div className={styles.parent}>
-            <Image
-              src="/products_imgs/portfolio_site/home_top.png"
-              alt="portfolio site image"
-              fill
-              sizes="45vw"
-            />
+            <Image src={props.image} alt={props.alt} fill sizes="45vw" />
           </div>
         </div>
         <div className={styles.content}>
           <button onClick={props.clickEvent}>ばってん</button>
-          <h3>TITLE</h3>
-          <p>despriction</p>
-          <a href="https://github.com/KakinokiKanta/about-kakinoki">GitHub</a>
-          <a href="https://about-kakinoki.vercel.app/">リンク</a>
+          <h3>{props.title}</h3>
+          <p>{props.description}</p>
+          <ul>
+            {props.links.map((item) => {
+              return (
+                <li key={item.href}>
+                  <a href={item.href}>{item.kinds}</a>
+                </li>
+              );
+            })}
+          </ul>
           <h3>使用技術</h3>
-          <p>TypeScript、React、Next.js</p>
+          {props.tools.map((tool) => {
+            return <div key={tool}>{tool}</div>;
+          })}
         </div>
       </div>
     </div>

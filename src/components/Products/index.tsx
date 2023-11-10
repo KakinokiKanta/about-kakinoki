@@ -1,14 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./Products.module.css";
 import React, { useState } from "react";
+import styles from "./Products.module.css";
 import { ModalWin } from "./ModalWin";
 
 type ProductsProps = {
   title: string;
   image: string;
   alt: string;
+  description: string[];
+  tools: string[];
+  links: {
+    href: string;
+    kinds: string;
+  }[];
 };
 
 export const Products = (props: ProductsProps) => {
@@ -36,7 +42,7 @@ export const Products = (props: ProductsProps) => {
         </div>
         <h3 className={styles.h3}>{props.title}</h3>
       </div>
-      {isOpen && <ModalWin clickEvent={manageModal} />}
+      {isOpen && <ModalWin clickEvent={manageModal} {...props} />}
     </>
   );
 };
