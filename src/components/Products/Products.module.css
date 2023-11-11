@@ -20,6 +20,7 @@
 .parent {
   position: relative;
   aspect-ratio: 4 / 3;
+  width: 100%;
 }
 
 .image {
@@ -35,6 +36,6 @@
 /* Mobile and Tablet */
 @media (width <= 768px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }

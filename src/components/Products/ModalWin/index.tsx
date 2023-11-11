@@ -59,6 +59,13 @@ export const ModalWin = (props: ModalWinProps) => {
                     rel="noopener noreferrer"
                   >
                     {item.kinds}
+                    <Image
+                      src={"/icons/external-link.svg"}
+                      alt=""
+                      width={14}
+                      height={14}
+                      className={styles.icon}
+                    />
                   </a>
                 </li>
               );
