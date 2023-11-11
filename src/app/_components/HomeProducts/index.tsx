@@ -11,8 +11,8 @@ export const HomeProducts = () => {
     <section className={styles.section}>
       <H2Animation title="PRODUCTS" animation="fadein" />
       <div className={styles.container}>
-        {PRODUCT_LIST.map((item) => {
-          return <Products {...item} key={item.title} />;
+        {PRODUCT_LIST.map((item, index) => {
+          return <>{index < 3 && <Products {...item} key={item.title} />}</>;
         })}
       </div>
       <div className={styles.button}>

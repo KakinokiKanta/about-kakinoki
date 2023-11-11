@@ -23,6 +23,10 @@ section {
   margin: 10rem auto;
 }
 
+p {
+  font-size: 16px;
+}
+
 @media (width <= 768px) {
   main {
     margin-top: 58px;

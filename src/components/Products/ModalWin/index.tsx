@@ -21,10 +21,12 @@ export const ModalWin = (props: ModalWinProps) => {
   return (
     <div className={styles.modalOverlay} onClick={props.clickEvent}>
       <div className={styles.modal}>
-        <div className={styles.top}>
-          <h2>{props.title}</h2>
-          <div onClick={props.clickButton} className={styles.button}>
-            <Close />
+        <div className={styles.topWidth}>
+          <div className={styles.top}>
+            <h2>{props.title}</h2>
+            <div onClick={props.clickButton} className={styles.button}>
+              <Close />
+            </div>
           </div>
         </div>
         <div className={styles.content}>
@@ -39,20 +41,39 @@ export const ModalWin = (props: ModalWinProps) => {
           </div>
         </div>
         <div className={styles.content}>
-          <p>{props.description}</p>
-          <ul>
+          {props.description.map((item) => {
+            return (
+              <p className={styles.description} key={item}>
+                {item}
+              </p>
+            );
+          })}
+          <ul className={styles.ul}>
             {props.links.map((item) => {
               return (
                 <li key={item.href}>
-                  <a href={item.href}>{item.kinds}</a>
+                  <a
+                    href={item.href}
+                    className={styles.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.kinds}
+                  </a>
                 </li>
               );
             })}
           </ul>
-          <h3>使用技術</h3>
-          {props.tools.map((tool) => {
-            return <div key={tool}>{tool}</div>;
-          })}
+          <h3 className={styles.h3}>使用技術</h3>
+          <div className={styles.tools}>
+            {props.tools.map((tool, index) => {
+              return (
+                <div className={styles.tool} key={tool}>
+                  {props.tools.length - 1 === index ? tool : `${tool},`}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
