@@ -20,6 +20,10 @@ type ProductsProps = {
 export const Products = (props: ProductsProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeModal = () => {
+    setIsOpen(!isOpen);
+  };
+
   const manageModal = (e: React.MouseEvent) => {
     if (!isOpen) {
       setIsOpen(!isOpen);
@@ -42,7 +46,13 @@ export const Products = (props: ProductsProps) => {
         </div>
         <h3 className={styles.h3}>{props.title}</h3>
       </div>
-      {isOpen && <ModalWin clickEvent={manageModal} {...props} />}
+      {isOpen && (
+        <ModalWin
+          clickEvent={manageModal}
+          clickButton={closeModal}
+          {...props}
+        />
+      )}
     </>
   );
 };

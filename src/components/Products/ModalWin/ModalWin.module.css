@@ -14,6 +14,7 @@
 .modal {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -26,13 +27,27 @@
   overflow: auto;
 }
 
+.top {
+  position: relative;
+  width: 100%;
+}
+
 .content {
   width: 49%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .parent {
   position: relative;
   aspect-ratio: 4 / 3;
+}
+
+.image {
+  border-radius: 10px;
 }
 
 /* Mobile and Tablet */
