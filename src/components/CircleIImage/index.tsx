@@ -18,6 +18,7 @@ export const CircleImage = (props: CircleImageProps) => {
         src={profileImage}
         alt="Photo for self-introduction"
         fill
+        sizes="50vw"
         style={{
           objectFit: "cover",
         }}

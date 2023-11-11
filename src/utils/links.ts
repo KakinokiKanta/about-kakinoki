@@ -4,4 +4,5 @@ export const HEADER_ITEMS = [
   { href: "/etrobo", label: "ETROBOCON" },
   { href: "/university", label: "UNIVERSITY" },
   // { href: "/volunteer", label: "VOLUNTEER" },
+  { href: "/products", label: "PRODUCTS" },
 ];

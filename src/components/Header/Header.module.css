@@ -62,7 +62,7 @@
   display: none;
 }
 
-@media (width <= 768px) {
+@media (width <= 1000px) {
   .header {
     height: 58px;
   }

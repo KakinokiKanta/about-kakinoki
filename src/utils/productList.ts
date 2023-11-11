@@ -1,0 +1,93 @@
+export const PRODUCT_LIST = [
+  {
+    title: "Portfolio Site",
+    image: "/products_imgs/portfolio_site/home_top.png",
+    alt: "this site",
+    description: [
+      "このWebサイトです。TypeScriptとReact、Next.jsを用いて開発しました。CSSはCSSモジュールを採用しました。",
+      "最近、Next.jsのapp routerについて学んだので、ルーティングはapp routerを採用しています。",
+      "簡単なCSSアニメーションやモーダルウィンドウ、レスポンシブデザインなど、Webフロントの基礎を学びながら開発を進めました。",
+      "個人的な一押しポイントは、技術スタックのアイコンが背景をスライドし続けるCSSアニメーションです。これによって、エンジニア志望の学生らしいポートフォリオサイトにできたと思います!!",
+    ],
+    tools: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "CSSモジュール",
+      "Git",
+      "GitHub",
+      "Vercel(デプロイ)",
+    ],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/about-kakinoki",
+        kinds: "GitHub",
+      },
+      {
+        href: "https://about-kakinoki.vercel.app/",
+        kinds: "Webアプリ",
+      },
+    ],
+  },
+  {
+    title: "Communication Leading Interface",
+    image: "/products_imgs/dena_autumn/dena_CLI_ans.png",
+    alt: "dena autumn hackason product",
+    description: [
+      "株式会社DeNA様のオータムハッカソン2023で開発したWebアプリです。私はフロントエンドの開発を担当し、このWebアプリでハッカソンを優勝しました!",
+      "このアプリは、エンジニア向けのCLIで操作できる自己紹介リレーアプリです。",
+      "在宅ワークの多いエンジニアは、新しくチームにジョインしたばかりだと、チームになじみにくいという問題を抱えています。お題と回答者を指名していくことでチーム内でのコミュニケーションを図ることができ、各メンバーの回答データを閲覧できることで、疑似的な自己紹介カードを作成することができます。",
+      "エンジニアライクなアプリとするために、これらの操作をCLIで行うことができます。",
+    ],
+    tools: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Xterm.js(Web上でのCUIの実装)",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+      "Vercel(デプロイ)",
+    ],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/dena-autumn2023-frontend",
+        kinds: "GitHub",
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1aWybADme1O4EncY2zE7ORNhTWaweKGhEy2FZg8a80DM/edit#slide=id.g2606e7a39ec_0_141",
+        kinds: "スライド",
+      },
+    ],
+  },
+  {
+    title: "ECO MEAL",
+    image: "/products_imgs/rakuten_intern/logo.png",
+    alt: "rakuten internship product",
+    description: [
+      "このWebアプリは、フードロス削減を目的とした食のポータルアプリです。楽天グループ株式会社様のハッカソン形式の夏インターンシップで開発しました。",
+      "飲食店で提供する料理の皿にQRコードを仕込むことで、料理を食べきったらQRコードを読み取ってポイントを獲得でき、獲得したポイントを使って、飲食店などで発生する廃棄前食品と交換することができます。",
+      "また、獲得したポイントで、たまごっちのようにキャラ育成をしていくことができ、キャラを育成しきったら、更にポイントを獲得することができます。この機能により、子供が積極的にフードロス削減に貢献できるような仕組みを実現しています。",
+      "技術的な工夫としては、サイドバーを共通化することで、デザインの一体化や画面遷移に関する機能の共通化を図っています。また、グローバルなポイントの状態管理も実現しています。",
+    ],
+    tools: [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "styled-components",
+      "Figma",
+      "Git",
+      "GitHub",
+    ],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/rakuten_sintern",
+        kinds: "GitHub",
+      },
+      {
+        href: "",
+        kinds: "スライド(まだリンク載せてない)",
+      },
+    ],
+  },
+];

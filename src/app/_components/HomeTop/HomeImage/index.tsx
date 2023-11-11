@@ -37,6 +37,7 @@ export const HomeImage = () => {
             style={{
               objectFit: "cover",
             }}
+            priority
             key={index}
           />
         );

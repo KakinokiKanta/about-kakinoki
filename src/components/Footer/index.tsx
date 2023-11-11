@@ -29,7 +29,13 @@ export const Footer = () => {
           <div className={styles.icons}>
             {ICONS_PATH.map((item) => {
               return (
-                <a href={item.href} className={styles.icon} key={item.image}>
+                <a
+                  href={item.href}
+                  className={styles.icon}
+                  key={item.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={item.image}
                     width={40}
