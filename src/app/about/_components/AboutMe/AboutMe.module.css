@@ -1,0 +1,56 @@
+.h1 {
+  text-align: center;
+}
+
+.aboutContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.parent {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.text {
+  width: 65%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.icon {
+  margin-right: 20px;
+  transform: scale(1);
+}
+
+.icon:hover {
+  size: 120%;
+  transform: scale(1.1);
+}
+
+@media (width <= 768px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .parent {
+    position: relative;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+}

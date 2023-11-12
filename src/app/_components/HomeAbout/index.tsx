@@ -1,5 +1,5 @@
 import { LinkButton } from "@/components/LinkButton";
-import { H2Animation } from "@/components/Animation/H2Animattion";
+import { H2Animation } from "@/components/Animation/H2Animation";
 import styles from "./HomeAbout.module.css";
 
 export const HomeAbout = () => {

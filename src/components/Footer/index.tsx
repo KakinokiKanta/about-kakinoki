@@ -1,23 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import { alumiSansCollegiateOne } from "@/lib/fontManager";
 import { HEADER_ITEMS } from "@/utils/links";
+import { ICONS_PATH } from "@/utils/socialIcons";
 
 export const Footer = () => {
-  const ICONS_PATH = [
-    {
-      image: "/icons/x-logo-black.png",
-      href: "https://twitter.com/kantan_IT",
-      alt: "x icon",
-    },
-    {
-      image: "/icons/github-mark.png",
-      href: "https://github.com/KakinokiKanta",
-      alt: "github icon",
-    },
-  ];
-
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
