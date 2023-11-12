@@ -6,8 +6,8 @@ import { Footer } from "@/components/Footer";
 import { BgAnimation } from "@/components/Animation/BgAnimation";
 
 export const metadata: Metadata = {
-  title: "Kakinoki Kanta",
-  description: "Self-introduction about Kakinoki Kanta",
+  title: "Kakinoki",
+  description: "Self-introduction about Kakinoki",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
