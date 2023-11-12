@@ -15,7 +15,8 @@ export const AboutMe = () => {
             src="/home_imgs/travel_back.JPG"
             alt="Kakinoki profile image"
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 50%, 30%"
           />
         </div>
         <div className={styles.text}>
