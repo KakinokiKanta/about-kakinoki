@@ -22,9 +22,16 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.vercel}>
-          <div className={`${styles.name} ${alumiSansCollegiateOne.className}`}>
-            Kakinoki
-          </div>
+          <a href={"/"} className={styles.logo}>
+            <Image
+              src="/icons/Kakinoki-logo-white.png"
+              alt="my logo"
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </a>
           <div className={styles.subtitle}>SOCIAL</div>
           <div className={styles.icons}>
             {ICONS_PATH.map((item) => {

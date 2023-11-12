@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./Header.module.css";
-import { alumiSansCollegiateOne } from "@/lib/fontManager";
 import { Menu } from "../Icons";
 import { HEADER_ITEMS } from "@/utils/links";
+import Image from "next/image";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +13,16 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={`${alumiSansCollegiateOne.className} ${styles.home}`}>
-          Kakinoki
-        </div>
+        <a href={"/"} className={styles.logo}>
+          <Image
+            src="/icons/Kakinoki-logo-ora.png"
+            alt="my logo"
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </a>
         <div className={styles.humburger} onClick={() => setIsOpen(!isOpen)}>
           <Menu isOpen={isOpen} />
         </div>
