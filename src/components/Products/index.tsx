@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Products.module.css";
 import { ModalWin } from "./ModalWin";
 
@@ -31,6 +31,16 @@ export const Products = (props: ProductsProps) => {
       setIsOpen(!isOpen);
     }
   };
+
+  useEffect(() => {
+    const body = document.body;
+
+    body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <>
