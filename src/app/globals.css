@@ -14,7 +14,7 @@ html {
 
 main {
   position: relative;
-  margin-top: 70px;
+  margin-top: 64px;
 }
 
 section {
@@ -27,8 +27,11 @@ p {
   font-size: 16px;
 }
 
-@media (width <= 768px) {
+@media (width <= 1000px) {
   main {
-    margin-top: 58px;
+    margin-top: 46px;
   }
+}
+
+@media (width <= 768px) {
 }

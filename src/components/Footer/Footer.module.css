@@ -22,9 +22,10 @@
   width: 45%;
 }
 
-.name {
-  font-size: 60px;
-  width: 100%;
+.logo {
+  position: relative;
+  width: 200px;
+  height: 40px;
 }
 
 .subtitle {

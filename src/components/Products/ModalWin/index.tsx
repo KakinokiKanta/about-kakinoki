@@ -75,7 +75,7 @@ export const ModalWin = (props: ModalWinProps) => {
           <div className={styles.tools}>
             {props.tools.map((tool, index) => {
               return (
-                <div className={styles.tool} key={tool}>
+                <div className={styles.tool} key={index}>
                   {props.tools.length - 1 === index ? tool : `${tool},`}
                 </div>
               );
