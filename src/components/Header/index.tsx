@@ -21,6 +21,7 @@ export const Header = () => {
             style={{
               objectFit: "cover",
             }}
+            sizes="(max-width: 1000px) 175px, 250px"
           />
         </a>
         <div className={styles.humburger} onClick={() => setIsOpen(!isOpen)}>

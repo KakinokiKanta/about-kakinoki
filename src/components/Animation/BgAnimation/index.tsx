@@ -58,9 +58,9 @@ export const BgAnimation = () => {
 
   return (
     <div className={styles.container}>
-      {TECH_STACK_ICONS.map((item) => {
+      {TECH_STACK_ICONS.map((item, index) => {
         return (
-          <div className={item.style} key={item.style}>
+          <div className={item.style} key={index}>
             <ul className={`${styles.list} ${styles.listLoop}`}>
               {item.image.map((icon) => {
                 return (

@@ -26,10 +26,8 @@ export const Footer = () => {
             <Image
               src="/icons/Kakinoki-logo-white.png"
               alt="my logo"
-              fill
-              style={{
-                objectFit: "cover",
-              }}
+              width={200}
+              height={40}
             />
           </a>
           <div className={styles.subtitle}>SOCIAL</div>

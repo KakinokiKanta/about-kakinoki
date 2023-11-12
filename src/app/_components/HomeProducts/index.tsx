@@ -1,3 +1,4 @@
+import React from "react";
 import { H2Animation } from "@/components/Animation/H2Animattion";
 import styles from "./HomeProducts.module.css";
 import { Products } from "@/components/Products";
@@ -12,7 +13,11 @@ export const HomeProducts = () => {
       <H2Animation title="PRODUCTS" animation="fadein" />
       <div className={styles.container}>
         {PRODUCT_LIST.map((item, index) => {
-          return <>{index < 3 && <Products {...item} key={item.title} />}</>;
+          return (
+            <React.Fragment key={item.title}>
+              {index < 3 && <Products {...item} />}
+            </React.Fragment>
+          );
         })}
       </div>
       <div className={styles.button}>
