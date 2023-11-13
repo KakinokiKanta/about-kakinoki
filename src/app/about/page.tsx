@@ -1,5 +1,6 @@
 import { AboutMe } from "./_components/AboutMe";
 import { List } from "./_components/List";
+import { Skills } from "./_components/Skills";
 
 const About = () => {
   const ACHIEVEMENTS = {
@@ -25,11 +26,33 @@ const About = () => {
     list: ["基本情報処理技術者", "ITパスポート"],
   };
 
+  const SKILLS = [
+    {
+      icon: "/stack_icons/c-plusplus.svg",
+      alt: "skill stack icon C++",
+      h3: "C++",
+      years: "3",
+      description:
+        "主にETロボコンで走行体(ロボット)の制御プログラム実装に使用しています。また、最近はほとんどできていませんが、競技プログラミング(AtCoder)でも使用しています。",
+      relatedSkills: ["C"],
+    },
+    {
+      icon: "/stack_icons/typescript-icon.svg",
+      alt: "skill stack icon typescript",
+      h3: "TypeScript",
+      years: "1",
+      description:
+        "Next.js(React)を用いたWebフロントエンド開発で使用しています。このポートフォリオサイトは、Next.jsを用いて開発しました。それ以外でも、インターンシップやハッカソンなどで使用経験があります。今後はSeleniumやStorybookなども使用していきたいと考えています。",
+      relatedSkills: ["JavaScript", "React", "Next.js", "Vercel", "Bootstrap"],
+    },
+  ];
+
   return (
     <main>
       <AboutMe />
       <List {...ACHIEVEMENTS} isAchieve={true} />
       <List {...CERTIFICATIONS} isAchieve={false} />
+      <Skills skill={SKILLS} />
     </main>
   );
 };

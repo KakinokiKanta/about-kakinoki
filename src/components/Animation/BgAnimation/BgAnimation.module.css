@@ -34,7 +34,7 @@
 }
 
 .listLoop {
-  animation: loop 90s infinite linear 0.5s both;
+  animation: loop 60s infinite linear 0.5s both;
 }
 
 /* .listLoopSecond {

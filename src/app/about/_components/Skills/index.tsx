@@ -1,0 +1,54 @@
+import Image from "next/image";
+import styles from "./Skills.module.css";
+import { H2Animation } from "@/components/Animation/H2Animation";
+
+type SkillsProps = {
+  skill: {
+    icon: string;
+    alt: string;
+    h3: string;
+    years: string;
+    description: string;
+    relatedSkills: string[];
+  }[];
+};
+
+export const Skills = (props: SkillsProps) => {
+  return (
+    <section>
+      <div className={styles.h2}>
+        <H2Animation title="SKILLS" animation="slideleft" />
+      </div>
+      <ul className={styles.ul}>
+        {props.skill.map((skill) => {
+          return (
+            <li className={styles.li} key={skill.h3}>
+              <div className={styles.container}>
+                <div className={styles.parent}>
+                  <Image src={skill.icon} alt={skill.alt} fill />
+                </div>
+                <div className={styles.text}>
+                  <div className={styles.top}>
+                    <h3 className={styles.h3}>{skill.h3}</h3>
+                    <p className={styles.years}>{`${skill.years}年目`}</p>
+                  </div>
+                  <p>{skill.description}</p>
+                  <div className={styles.relatedSkills}>
+                    {skill.relatedSkills.map((item, index) => {
+                      return (
+                        <p
+                          className={styles.relatedSkill}
+                          key={index}
+                        >{`#${item}`}</p>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+};

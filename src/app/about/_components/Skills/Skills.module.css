@@ -1,0 +1,53 @@
+.h2 {
+  width: 45%;
+}
+
+.ul {
+  list-style: none;
+}
+
+.li {
+  margin: 2rem 0;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.parent {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 15%;
+}
+
+.text {
+  width: 82%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h3 {
+  font-size: 24px;
+  border-bottom: double 5px #f80;
+}
+
+.years {
+  margin: 0;
+}
+
+.relatedSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.relatedSkill {
+  margin: 0;
+  margin-right: 10px;
+}
