@@ -7,11 +7,9 @@ export const HomeAbout = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <H2Animation title="ABOUT ME" animation="fadein" />
-        <p className={styles.description}>宮崎大学の修士1年生です。</p>
-        <p className={styles.description}>
-          プログラミングは大学から始め、最近はRSCの勉強をしています。
-        </p>
-        <p className={styles.description}>
+        <p>宮崎大学の修士1年生です。</p>
+        <p>プログラミングは大学から始め、最近はRSCの勉強をしています。</p>
+        <p>
           普段は主に、研究、講義、ロボコン、アルバイト、ボランティアなどを行っています。
         </p>
         <LinkButton href="/about" />

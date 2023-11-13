@@ -22,11 +22,7 @@ export const HomeContent = (props: HomeContentProps) => {
           <div className={styles.vercel}>
             <H2Animation title={props.h2} animation="slideright" />
             {props.p.map((item) => {
-              return (
-                <p className={styles.description} key={item}>
-                  {item}
-                </p>
-              );
+              return <p key={item}>{item}</p>;
             })}
             <LinkButton href={props.link} />
           </div>
@@ -38,11 +34,7 @@ export const HomeContent = (props: HomeContentProps) => {
           <div className={styles.vercel}>
             <H2Animation title={props.h2} animation="slideleft" />
             {props.p.map((item) => {
-              return (
-                <p className={styles.description} key={item}>
-                  {item}
-                </p>
-              );
+              return <p key={item}>{item}</p>;
             })}
             <LinkButton href={props.link} />
           </div>
