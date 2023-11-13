@@ -20,10 +20,16 @@ const About = () => {
     ],
   };
 
+  const CERTIFICATIONS = {
+    title: "CERTIFICATIONS",
+    list: ["基本情報処理技術者", "ITパスポート"],
+  };
+
   return (
     <main>
       <AboutMe />
       <List {...ACHIEVEMENTS} isAchieve={true} />
+      <List {...CERTIFICATIONS} isAchieve={false} />
     </main>
   );
 };
