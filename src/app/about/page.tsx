@@ -28,6 +28,15 @@ const About = () => {
 
   const SKILLS = [
     {
+      icon: "/stack_icons/typescript-icon.svg",
+      alt: "skill stack icon typescript",
+      h3: "TypeScript",
+      years: "1",
+      description:
+        "Next.js(React)を用いたWebフロントエンド開発で使用しています。このポートフォリオサイトは、Next.jsを用いて開発しました。それ以外でも、インターンシップやハッカソンなどで使用経験があります。今後はSeleniumやStorybookなども使用していきたいと考えています。",
+      relatedSkills: ["JavaScript", "React", "Next.js", "Vercel", "Bootstrap"],
+    },
+    {
       icon: "/stack_icons/c-plusplus.svg",
       alt: "skill stack icon C++",
       h3: "C++",
@@ -37,13 +46,13 @@ const About = () => {
       relatedSkills: ["C"],
     },
     {
-      icon: "/stack_icons/typescript-icon.svg",
-      alt: "skill stack icon typescript",
-      h3: "TypeScript",
-      years: "1",
+      icon: "/stack_icons/python.svg",
+      alt: "skill stack icon python",
+      h3: "Python",
+      years: "3",
       description:
-        "Next.js(React)を用いたWebフロントエンド開発で使用しています。このポートフォリオサイトは、Next.jsを用いて開発しました。それ以外でも、インターンシップやハッカソンなどで使用経験があります。今後はSeleniumやStorybookなども使用していきたいと考えています。",
-      relatedSkills: ["JavaScript", "React", "Next.js", "Vercel", "Bootstrap"],
+        "研究において、ツールの実装に用いています。また、ETロボコンではWebカメラを用いた競技が存在し、そのシステムの実装でも使用しています。",
+      relatedSkills: [],
     },
   ];
 
