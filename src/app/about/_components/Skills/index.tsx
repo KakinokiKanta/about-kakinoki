@@ -29,7 +29,12 @@ export const Skills = (props: SkillsProps) => {
                 </div>
                 <div className={styles.text}>
                   <div className={styles.top}>
-                    <h3 className={styles.h3}>{skill.h3}</h3>
+                    <div className={styles.title}>
+                      <div className={styles.parentSmall}>
+                        <Image src={skill.icon} alt={skill.alt} fill />
+                      </div>
+                      <h3 className={styles.h3}>{skill.h3}</h3>
+                    </div>
                     <p className={styles.years}>{`${skill.years}年目`}</p>
                   </div>
                   <p>{skill.description}</p>

@@ -3,8 +3,8 @@ import { List } from "./_components/List";
 import { Skills } from "./_components/Skills";
 
 const About = () => {
-  const ACHIEVEMENTS = {
-    title: "ACHIEVEMENTS",
+  const ACHIEVE = {
+    title: "ACHIEVE",
     list: [
       "2023/11 : ETロボコンCS(全国)大会2023 アドバンストクラス 出場",
       "2023/10 : ETロボコン地区(九州)大会2022 アドバンストクラス 総合優勝",
@@ -21,8 +21,8 @@ const About = () => {
     ],
   };
 
-  const CERTIFICATIONS = {
-    title: "CERTIFICATIONS",
+  const EXAMS = {
+    title: "EXAMS",
     list: ["基本情報処理技術者", "ITパスポート"],
   };
 
@@ -50,8 +50,8 @@ const About = () => {
   return (
     <main>
       <AboutMe />
-      <List {...ACHIEVEMENTS} isAchieve={true} />
-      <List {...CERTIFICATIONS} isAchieve={false} />
+      <List {...ACHIEVE} isAchieve={true} />
+      <List {...EXAMS} isAchieve={false} />
       <Skills skill={SKILLS} />
     </main>
   );

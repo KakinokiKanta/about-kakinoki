@@ -17,10 +17,22 @@
   padding: 20px;
 }
 
+.title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .parent {
   position: relative;
   aspect-ratio: 1 / 1;
   width: 15%;
+}
+
+.parentSmall {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 0%;
+  margin: 0;
 }
 
 .text {
@@ -50,4 +62,19 @@
 .relatedSkill {
   margin: 0;
   margin-right: 10px;
+}
+
+@media (width <= 768px) {
+  .parent {
+    width: 0;
+  }
+
+  .parentSmall {
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  .text {
+    width: 100%;
+  }
 }
