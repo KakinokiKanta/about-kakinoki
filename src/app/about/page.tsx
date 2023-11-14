@@ -52,7 +52,16 @@ const About = () => {
       years: "3",
       description:
         "研究において、ツールの実装に用いています。また、ETロボコンではWebカメラを用いた競技が存在し、そのシステムの実装でも使用しています。",
-      relatedSkills: [],
+      relatedSkills: ["Flask", "OpenCV", "機械学習"],
+    },
+    {
+      icon: "/stack_icons/css-3.svg",
+      alt: "skill stack icon html",
+      h3: "CSS",
+      years: "3",
+      description:
+        "このポートフォリオサイトを作成するにあたって、CSSアニメーションについて学びながら実装しました。今後も引き続きCSSアニメーションについて学び続けたいと思います。",
+      relatedSkills: ["HTML"],
     },
   ];
 
