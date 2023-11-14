@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Skills.module.css";
 import { H2Animation } from "@/components/Animation/H2Animation";
+import { TECH_STACK_ICONS } from "@/utils/techStackIcons";
 
 type SkillsProps = {
   skill: {
