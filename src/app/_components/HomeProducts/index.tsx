@@ -1,11 +1,9 @@
 import React from "react";
-import { H2Animation } from "@/components/Animation/H2Animattion";
+import { H2Animation } from "@/components/Animation/H2Animation";
 import styles from "./HomeProducts.module.css";
 import { Products } from "@/components/Products";
 import { LinkButton } from "@/components/LinkButton";
 import { PRODUCT_LIST } from "@/utils/productList";
-
-// https://docs.google.com/presentation/d/1aWybADme1O4EncY2zE7ORNhTWaweKGhEy2FZg8a80DM/edit#slide=id.g2606e7a39ec_0_141
 
 export const HomeProducts = () => {
   return (

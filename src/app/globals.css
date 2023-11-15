@@ -24,7 +24,8 @@ section {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
+  margin: 1rem 0;
 }
 
 @media (width <= 1000px) {

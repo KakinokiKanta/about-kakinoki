@@ -39,11 +39,6 @@
   margin-bottom: 3rem;
 }
 
-.description {
-  font-size: 16px;
-  margin: 1rem 0;
-}
-
 /* Mobile and Tablet */
 @media (width <= 768px) {
   .vercel {
@@ -61,9 +56,5 @@
   .head {
     font-size: 32px;
     margin: 2rem 0;
-  }
-
-  .description {
-    margin: 1rem 0;
   }
 }

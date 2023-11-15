@@ -6,11 +6,6 @@
   margin: 0 auto;
 }
 
-.description {
-  font-size: 16px;
-  margin: 1rem 0;
-}
-
 @media (width <= 768px) {
   .head {
     font-size: 32px;

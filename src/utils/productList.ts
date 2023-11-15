@@ -5,7 +5,7 @@ export const PRODUCT_LIST = [
     alt: "this site",
     description: [
       "このWebサイトです。TypeScriptとReact、Next.jsを用いて開発しました。CSSはCSSモジュールを採用しました。",
-      "最近、Next.jsのapp routerについて学んだので、ルーティングはapp routerを採用しています。",
+      "最近、Next.js(App Router)について学んだので、ルーティングはApp Routerを採用しています。",
       "簡単なCSSアニメーションやモーダルウィンドウ、レスポンシブデザインなど、Webフロントの基礎を学びながら開発を進めました。",
       "個人的な一押しポイントは、技術スタックのアイコンが背景をスライドし続けるCSSアニメーションです。これによって、エンジニア志望の学生らしいポートフォリオサイトにできたと思います!!",
     ],
@@ -25,7 +25,7 @@ export const PRODUCT_LIST = [
       },
       {
         href: "https://about-kakinoki.vercel.app/",
-        kinds: "Webアプリ",
+        kinds: "Web App",
       },
     ],
   },
@@ -35,9 +35,9 @@ export const PRODUCT_LIST = [
     alt: "dena autumn hackason product",
     description: [
       "株式会社DeNA様のオータムハッカソン2023で開発したWebアプリです。私はフロントエンドの開発を担当し、このWebアプリでハッカソンを優勝しました!",
-      "このアプリは、エンジニア向けのCLIで操作できる自己紹介リレーアプリです。",
-      "在宅ワークの多いエンジニアは、新しくチームにジョインしたばかりだと、チームになじみにくいという問題を抱えています。お題と回答者を指名していくことでチーム内でのコミュニケーションを図ることができ、各メンバーの回答データを閲覧できることで、疑似的な自己紹介カードを作成することができます。",
-      "エンジニアライクなアプリとするために、これらの操作をCLIで行うことができます。",
+      "このアプリは、在宅ワークが多く業務以外の交流が図りづらいエンジニア向けの「CLIで操作できる自己紹介リレー」アプリです。",
+      "エンジニアライクなアプリとするために、アプリの操作はCLIで行います。",
+      "フロントエンド側はTypeScript+Next.js(App Router)をVercelでデプロイしています。",
     ],
     tools: [
       "TypeScript",
@@ -56,7 +56,7 @@ export const PRODUCT_LIST = [
       },
       {
         href: "https://docs.google.com/presentation/d/1aWybADme1O4EncY2zE7ORNhTWaweKGhEy2FZg8a80DM/edit#slide=id.g2606e7a39ec_0_141",
-        kinds: "スライド",
+        kinds: "Slide",
       },
     ],
   },
@@ -83,10 +83,6 @@ export const PRODUCT_LIST = [
       {
         href: "https://github.com/KakinokiKanta/rakuten_sintern",
         kinds: "GitHub",
-      },
-      {
-        href: "",
-        kinds: "スライド(まだリンク載せてない)",
       },
     ],
   },
