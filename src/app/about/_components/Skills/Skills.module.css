@@ -64,20 +64,23 @@
   margin-right: 10px;
 }
 
-.table {
+/* .table {
   margin: 3rem 0;
   width: 100%;
   aspect-ratio: 8 / 3;
-}
+} */
 
 .row {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .stackIcon {
-  position: absolute;
+  position: relative;
   width: 10%;
   aspect-ratio: 1 / 1;
+  margin: 20px 0;
 }
 
 @media (width <= 768px) {
@@ -92,5 +95,9 @@
 
   .text {
     width: 100%;
+  }
+
+  .stackIcon {
+    width: 23%;
   }
 }

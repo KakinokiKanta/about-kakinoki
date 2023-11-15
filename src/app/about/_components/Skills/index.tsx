@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "next/image";
 import styles from "./Skills.module.css";
 import { H2Animation } from "@/components/Animation/H2Animation";
@@ -55,7 +56,7 @@ export const Skills = (props: SkillsProps) => {
           );
         })}
       </ul>
-      <table className={styles.table}>
+      {/* <table className={styles.table}>
         <tbody>
           {TECH_STACK_ICONS.map((row) => {
             return (
@@ -73,7 +74,22 @@ export const Skills = (props: SkillsProps) => {
             )
           })}
         </tbody>
-      </table>
+      </table> */}
+      <div>
+        {TECH_STACK_ICONS.map((row) => {
+          return (
+            <div className={styles.row} key={row.style}>
+              {row.image.map((icon) => {
+                return (
+                  <div className={styles.stackIcon} key={icon}>
+                    <Image src={icon} alt="" fill sizes="(max-width: 768px) 23%, 10%" />
+                  </div>
+                )
+              })}
+            </div>
+          )
+        })}
+      </div>
     </section>
   );
 };
