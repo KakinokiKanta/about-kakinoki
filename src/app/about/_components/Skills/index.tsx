@@ -75,7 +75,7 @@ export const Skills = (props: SkillsProps) => {
           })}
         </tbody>
       </table> */}
-      <div>
+      <div className={styles.icons}>
         {TECH_STACK_ICONS.map((row) => {
           return (
             <div className={styles.row} key={row.style}>
