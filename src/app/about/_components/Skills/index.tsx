@@ -56,10 +56,10 @@ export const Skills = (props: SkillsProps) => {
         })}
       </ul>
       <table className={styles.table}>
-          <tbody>
+        <tbody>
           {TECH_STACK_ICONS.map((row) => {
             return (
-              <tr key={row.style}>
+              <tr className={styles.row} key={row.style}>
                 {row.image.map((item) => {
                   return (
                     <td key={item}>

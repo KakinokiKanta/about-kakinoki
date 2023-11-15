@@ -70,6 +70,10 @@
   aspect-ratio: 8 / 3;
 }
 
+.row {
+  position: relative;
+}
+
 .stackIcon {
   position: absolute;
   width: 10%;
