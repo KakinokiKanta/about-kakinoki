@@ -65,6 +65,7 @@
 }
 
 .table {
+  margin: 3rem 0;
   width: 100%;
   aspect-ratio: 8 / 3;
 }

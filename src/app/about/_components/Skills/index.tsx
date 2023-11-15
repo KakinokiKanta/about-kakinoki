@@ -64,7 +64,7 @@ export const Skills = (props: SkillsProps) => {
                   return (
                     <td key={item}>
                       <div className={styles.stackIcon}>
-                        <Image src={item} alt="" fill />
+                        <Image src={item} alt="" fill sizes="10%" />
                       </div>
                     </td>
                   )
