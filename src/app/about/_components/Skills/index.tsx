@@ -55,6 +55,25 @@ export const Skills = (props: SkillsProps) => {
           );
         })}
       </ul>
+      <table className={styles.table}>
+          <tbody>
+          {TECH_STACK_ICONS.map((row) => {
+            return (
+              <tr key={row.style}>
+                {row.image.map((item) => {
+                  return (
+                    <td key={item}>
+                      <div className={styles.stackIcon}>
+                        <Image src={item} alt="" fill />
+                      </div>
+                    </td>
+                  )
+                })}
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
     </section>
   );
 };
