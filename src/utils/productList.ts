@@ -25,7 +25,7 @@ export const PRODUCT_LIST = [
       },
       {
         href: "https://about-kakinoki.vercel.app/",
-        kinds: "Webアプリ",
+        kinds: "Web App",
       },
     ],
   },
@@ -56,7 +56,7 @@ export const PRODUCT_LIST = [
       },
       {
         href: "https://docs.google.com/presentation/d/1aWybADme1O4EncY2zE7ORNhTWaweKGhEy2FZg8a80DM/edit#slide=id.g2606e7a39ec_0_141",
-        kinds: "スライド",
+        kinds: "Slide",
       },
     ],
   },
@@ -83,10 +83,6 @@ export const PRODUCT_LIST = [
       {
         href: "https://github.com/KakinokiKanta/rakuten_sintern",
         kinds: "GitHub",
-      },
-      {
-        href: "",
-        kinds: "スライド(まだリンク載せてない)",
       },
     ],
   },
