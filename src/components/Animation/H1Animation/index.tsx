@@ -6,7 +6,6 @@ import { rowdies } from "@/lib/fontManager";
 
 type H1AnimationProps = {
   title: string;
-  animation: string;
 };
 
 export const H1Animation = (props: H1AnimationProps) => {

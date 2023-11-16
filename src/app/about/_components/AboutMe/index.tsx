@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <section>
       <div className={styles.h1}>
-        <H1Animation title="ABOUT ME" animation="fadein" />
+        <H1Animation title="ABOUT ME" />
       </div>
       <div className={styles.aboutContainer}>
         <div className={styles.parent}>
