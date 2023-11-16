@@ -7,6 +7,7 @@ export const AboutET = () => {
       <div className={styles.h1}>
         <H1Animation title="ET ROBOT CONTEST" />
       </div>
+      <div></div>
     </section>
   )
 }
