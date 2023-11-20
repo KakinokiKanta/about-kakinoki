@@ -1,5 +1,5 @@
 import { AboutMe } from "./_components/AboutMe";
-import { List } from "../../components/List";
+import { List } from "./_components/List";
 import { Skills } from "./_components/Skills";
 
 const About = () => {
