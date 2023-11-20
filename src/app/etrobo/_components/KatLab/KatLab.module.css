@@ -24,3 +24,20 @@
   position: relative;
   width: 55%;
 }
+
+/* Mobile and Tablet */
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .parent {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+  }
+
+  .text {
+    width: 100%;
+  }
+}

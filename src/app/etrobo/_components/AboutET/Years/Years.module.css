@@ -18,11 +18,28 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   background-color: #fff;
-  /* width: 100% !important; */
+  width: 100% !important;
   height: unset !important;
 }
 
 .text {
   position: relative;
   width: 45%;
+}
+
+/* Mobile and Tablet */
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .parent {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .text {
+    width: 100%;
+  }
 }
