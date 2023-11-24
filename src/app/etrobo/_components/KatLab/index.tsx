@@ -2,6 +2,7 @@ import styles from "./KatLab.module.css";
 import { H2Animation } from "@/components/Animation/H2Animation";
 import { List } from "./List";
 import Image from "next/image";
+import { Model } from "./Model";
 
 export const KatLab = () => {
   const ACHIEVE = {
@@ -47,6 +48,7 @@ export const KatLab = () => {
         </div>
       </div>
       <List {...ACHIEVE} />
+      <Model />
     </section>
   );
 };
