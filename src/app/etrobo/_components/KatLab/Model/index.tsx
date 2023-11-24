@@ -15,7 +15,9 @@ export const Model = () => {
 
   return (
     <div>
-      <h3 className={styles.h3}>KatLab設計書(モデル)</h3>
+      <h3 className={styles.h3} id="model">
+        KatLab設計書(モデル)
+      </h3>
       <div className={styles.flame}>
         <Document
           file="/robocon/ADV_063_KatLab.pdf"
