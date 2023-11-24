@@ -1,3 +1,13 @@
 .h1 {
   text-align: center;
 }
+
+.movie {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}

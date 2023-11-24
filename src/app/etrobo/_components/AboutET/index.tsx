@@ -65,6 +65,16 @@ export const AboutET = () => {
       </div>
       <Years {...YEARS_PROPS[0]} />
       <Years {...YEARS_PROPS[1]} />
+      <div className={styles.movie}>
+        <iframe
+          className={styles.youtube}
+          src="https://www.youtube.com/embed/ISdRLRbNAEk?si=Z3uGPXfrcdMYH1L_&amp;start=20128"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
     </section>
   );
 };
