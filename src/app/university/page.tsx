@@ -1,5 +1,13 @@
 const University = () => {
-  return <main>University Page!</main>;
+  return (
+    <main>
+      <section>
+        University Page!!
+        <br />
+        ここを作ってくで!
+      </section>
+    </main>
+  );
 };
 
 export default University;
