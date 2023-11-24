@@ -14,21 +14,24 @@ export const Model = () => {
   };
 
   return (
-    <div className={styles.flame}>
-      <Document
-        file="/robocon/ADV_063_KatLab.pdf"
-        onLoadSuccess={onDocumentLoadSuccess}
-        className={styles.pdf}
-      >
-        {Array.from({ length: numPages }, (_, index) => (
-          <Page
-            key={`page_${index + 1}`}
-            pageNumber={index + 1}
-            renderAnnotationLayer={false}
-            renderTextLayer={false}
-          />
-        ))}
-      </Document>
+    <div>
+      <h3 className={styles.h3}>KatLab設計書(モデル)</h3>
+      <div className={styles.flame}>
+        <Document
+          file="/robocon/ADV_063_KatLab.pdf"
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          {Array.from({ length: numPages }, (_, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+              width={1100}
+            />
+          ))}
+        </Document>
+      </div>
     </div>
   );
 };

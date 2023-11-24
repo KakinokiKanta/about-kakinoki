@@ -10,6 +10,7 @@ type ListProps = {
 export const List = (props: ListProps) => {
   return (
     <div className={styles.container}>
+      <h3 className={styles.h3}>成績</h3>
       <ul className={styles.list}>
         {props.list.map((item, index) => {
           return (
