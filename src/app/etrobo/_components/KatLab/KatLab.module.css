@@ -1,3 +1,43 @@
 .h2 {
   width: 45%;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent {
+  position: relative;
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.image {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  width: 100%;
+}
+
+.text {
+  position: relative;
+  width: 55%;
+}
+
+/* Mobile and Tablet */
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .parent {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+  }
+
+  .text {
+    width: 100%;
+  }
+}

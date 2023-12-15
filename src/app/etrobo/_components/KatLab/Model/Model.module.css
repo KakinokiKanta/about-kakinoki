@@ -1,0 +1,16 @@
+.h3 {
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.flame {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  overflow-x: scroll;
+}
+
+.pdf {
+  position: relative;
+  width: 100%;
+}

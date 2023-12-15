@@ -1,0 +1,40 @@
+.container {
+  margin: 3rem 0;
+}
+
+.h3 {
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none inside;
+}
+
+.listChild {
+  list-style: none inside;
+  margin-left: 2.5rem;
+}
+
+.achieve {
+  background-image: url(/icons/trophy-solid.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto 20px;
+  padding-left: 40px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.qualification {
+  background-image: url(/icons/book-solid.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto 20px;
+  padding-left: 40px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
