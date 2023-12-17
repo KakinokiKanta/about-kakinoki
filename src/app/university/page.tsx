@@ -1,11 +1,9 @@
+import { MiyazakiUni } from "./_components/MiyazakiUni";
+
 const University = () => {
   return (
     <main>
-      <section>
-        University Page!!
-        <br />
-        ここを作ってくで!
-      </section>
+      <MiyazakiUni />
     </main>
   );
 };
