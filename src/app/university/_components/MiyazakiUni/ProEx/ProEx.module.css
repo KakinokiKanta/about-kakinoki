@@ -6,11 +6,17 @@
 .container {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
-.parent {
+.parent5 {
   position: relative;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  width: 50%;
+}
+
+.parent6 {
+  position: relative;
   width: 50%;
 }
 
@@ -34,9 +40,14 @@
     width: 100%;
   }
 
-  .parent {
+  .parent5 {
     width: 100%;
     aspect-ratio: 3 / 2;
+  }
+
+  .parent6 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
   }
 
   .text {

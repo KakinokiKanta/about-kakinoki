@@ -13,7 +13,7 @@ export const ProEx = (props: ProExProps) => {
     <div>
       <h3 className={styles.h3}>{props.h3}</h3>
       <div className={styles.container}>
-        <div className={styles.parent}>
+        <div className={props.h3 === "プログラミング演習5" ? styles.parent5 : styles.parent6}>
           <Image
             src={props.img}
             alt={props.alt}
