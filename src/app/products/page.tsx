@@ -1,5 +1,9 @@
 const Products = () => {
-  return <main>Products Page!</main>;
+  return (
+    <main>
+      <section>Products Page!</section>
+    </main>
+  );
 };
 
 export default Products;
