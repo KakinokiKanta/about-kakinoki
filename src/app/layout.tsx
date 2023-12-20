@@ -6,8 +6,9 @@ import { Footer } from "@/components/Footer";
 import { BgAnimation } from "@/components/Animation/BgAnimation";
 
 export const metadata: Metadata = {
-  title: "Kakinoki",
-  description: "Self-introduction about Kakinoki",
+  title: "柿木幹太のポートフォリオサイト",
+  description:
+    "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
