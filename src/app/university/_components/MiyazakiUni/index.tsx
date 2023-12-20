@@ -36,7 +36,14 @@ export const MiyazakiUni = () => {
       </div>
       <div>
         <p>
-          大学では、工学研究科工学専攻の情報システム工学分野に在籍しています。
+          <a
+            href="https://www.miyazaki-u.ac.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宮崎大学
+          </a>
+          では、工学研究科工学専攻の情報システム工学分野に在籍しています。
           様々な講義でコンピュータサイエンスに関する基礎やプログラミングについて学んでいます。
         </p>
         <p>
