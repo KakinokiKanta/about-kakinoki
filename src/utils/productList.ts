@@ -86,4 +86,56 @@ export const PRODUCT_LIST = [
       },
     ],
   },
+  {
+    title: "ECO MEAL",
+    image: "/products_imgs/rakuten_intern/logo.png",
+    alt: "rakuten internship product",
+    description: [
+      "このWebアプリは、フードロス削減を目的とした食のポータルアプリです。楽天グループ株式会社様のハッカソン形式の夏インターンシップで開発しました。",
+      "飲食店で提供する料理の皿にQRコードを仕込むことで、料理を食べきったらQRコードを読み取ってポイントを獲得でき、獲得したポイントを使って、飲食店などで発生する廃棄前食品と交換することができます。",
+      "また、獲得したポイントで、たまごっちのようにキャラ育成をしていくことができ、キャラを育成しきったら、更にポイントを獲得することができます。この機能により、子供が積極的にフードロス削減に貢献できるような仕組みを実現しています。",
+      "技術的な工夫としては、サイドバーを共通化することで、デザインの一体化や画面遷移に関する機能の共通化を図っています。また、グローバルなポイントの状態管理も実現しています。",
+    ],
+    tools: [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "styled-components",
+      "Figma",
+      "Git",
+      "GitHub",
+    ],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/rakuten_sintern",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "ECO MEAL",
+    image: "/products_imgs/rakuten_intern/logo.png",
+    alt: "rakuten internship product",
+    description: [
+      "このWebアプリは、フードロス削減を目的とした食のポータルアプリです。楽天グループ株式会社様のハッカソン形式の夏インターンシップで開発しました。",
+      "飲食店で提供する料理の皿にQRコードを仕込むことで、料理を食べきったらQRコードを読み取ってポイントを獲得でき、獲得したポイントを使って、飲食店などで発生する廃棄前食品と交換することができます。",
+      "また、獲得したポイントで、たまごっちのようにキャラ育成をしていくことができ、キャラを育成しきったら、更にポイントを獲得することができます。この機能により、子供が積極的にフードロス削減に貢献できるような仕組みを実現しています。",
+      "技術的な工夫としては、サイドバーを共通化することで、デザインの一体化や画面遷移に関する機能の共通化を図っています。また、グローバルなポイントの状態管理も実現しています。",
+    ],
+    tools: [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "styled-components",
+      "Figma",
+      "Git",
+      "GitHub",
+    ],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/rakuten_sintern",
+        kinds: "GitHub",
+      },
+    ],
+  },
 ];
