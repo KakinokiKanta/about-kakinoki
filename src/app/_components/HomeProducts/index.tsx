@@ -19,7 +19,7 @@ export const HomeProducts = () => {
         })}
       </div>
       <div className={styles.button}>
-        <LinkButton href="/products" />
+        <LinkButton href="/allProducts" />
       </div>
     </section>
   );
