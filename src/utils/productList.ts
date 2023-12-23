@@ -93,8 +93,8 @@ export const PRODUCT_LIST = [
     description: [
       "このシステムは、ETロボコン2022大会で開発したロボット側のシステムです。C++とPythonを用いてラズパイ上に実装しました。",
       "私はロボコン初参加だったため、先輩方のアドバイスを受けながら、OnOff制御やPID制御などの組み込み開発における重要な点を学びながら実装を進めました。",
-      "また、A*アルゴリズムを用いた経路探索に基づく、ゲーム攻略も実装しました。",
       "本年のユニークなポイントとしては、走行の信頼性を高めるために、リアカメラを用いて走行を補正する「回頭補正」を導入した点です。",
+      "個人的なこの開発の強みは、コードレビューをする(される)ことです。自分の実装に対して、毎週のように人からフィードバックを受けることができ、また、他人の実装に対してフィードバックをするために頭を悩ませることで、かなり実力が付いたと思います。",
     ],
     tools: [
       "C++",
@@ -108,6 +108,50 @@ export const PRODUCT_LIST = [
     links: [
       {
         href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2022",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "ロボコン2022 カメラシステム",
+    image: "/products_imgs/robocon2022_camera/game_course_2022.png",
+    alt: "robocon2022 camera system product",
+    description: [
+      "このシステムは、ETロボコン2022大会で開発したカメラシステムです。カメラシステムはノートPC上で起動し、USB接続したWebカメラからの画像を処理することで、ロボット側に走行経路を指示します。",
+      "ランダムに設置されたカラーブロックを、同じカラーのブロックが目印となっている4箇所の設置場所まで運んでいきます。なお、この設置場所のカラーもランダムに決まります。",
+      "Webカメラから取得したコース画像を基に、ブロックの位置を把握し、設置場所までの走行経路を算出します。",
+      "走行経路を算出する際には、A*アルゴリズムを用いた経路探索を行っています。",
+    ],
+    tools: ["Python", "OpenCV", "Git", "GitHub", "GitHub Actions"],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2022-camera-system",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "ロボコン2023 走行体システム",
+    image: "/products_imgs/robocon2023_sys/main_image.png",
+    alt: "robocon2023 main system product",
+    description: [
+      "このシステムは、ETロボコン2022大会で開発したロボット側のシステムです。C++とPythonを用いてラズパイ上に実装しました。",
+      "私はロボコン初参加だったため、先輩方のアドバイスを受けながら、OnOff制御やPID制御などの組み込み開発における重要な点を学びながら実装を進めました。",
+      "本年のユニークなポイントとしては、走行の信頼性を高めるために、リアカメラを用いて走行を補正する「回頭補正」を導入した点です。",
+      "個人的なこの開発の強みは、コードレビューをする(される)ことです。自分の実装に対して、毎週のように人からフィードバックを受けることができ、また、他人の実装に対してフィードバックをするために頭を悩ませることで、かなり実力が付いたと思います。",
+    ],
+    tools: [
+      "C++",
+      "Python",
+      "OpenCV",
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "Raspberry Pi",
+    ],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2023",
         kinds: "GitHub",
       },
     ],
