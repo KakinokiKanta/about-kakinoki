@@ -44,17 +44,19 @@ export const Products = (props: ProductsProps) => {
 
   return (
     <>
-      <div className={styles.container} onClick={manageModal}>
-        <div className={styles.parent}>
-          <Image
-            className={styles.image}
-            src={props.image}
-            alt={props.alt}
-            fill
-            sizes="30vw"
-          />
+      <div className={styles.container}>
+        <div className={styles.content} onClick={manageModal}>
+          <div className={styles.parent}>
+            <Image
+              className={styles.image}
+              src={props.image}
+              alt={props.alt}
+              fill
+              sizes="30vw"
+            />
+          </div>
+          <h3 className={styles.h3}>{props.title}</h3>
         </div>
-        <h3 className={styles.h3}>{props.title}</h3>
       </div>
       {isOpen && (
         <ModalWin
