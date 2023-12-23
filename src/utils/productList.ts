@@ -87,6 +87,64 @@ export const PRODUCT_LIST = [
     ],
   },
   {
+    title: "ロボコン2023 走行体システム",
+    image: "/products_imgs/robocon2023_sys/main_image.png",
+    alt: "robocon2023 main system product",
+    description: [
+      "このシステムは、ETロボコン2023大会で開発したロボット側のシステムです。C++とPythonを用いてラズパイ上に実装しました。",
+      "本年の開発では、ゲーム内容に顔認識が必要だったため、YOLOを用いた物体検出を導入しました。また、昨年以上に精密な走行を実現するために、モーターのパワーで直接的に走行を制御するのではなく、ロボットの走行速度の実測値と指定値の差から次の指定値を判定する速度フィードバック制御を導入しました。",
+    ],
+    tools: [
+      "C++",
+      "Python",
+      "OpenCV",
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "Raspberry Pi",
+    ],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2023",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "ロボコン2023 カメラシステム",
+    image: "/products_imgs/robocon2023_camera/game_course_2023.png",
+    alt: "robocon2022 camera system product",
+    description: [
+      "このシステムは、ETロボコン2023大会で開発したカメラシステムです。",
+      "ETロボコン2023大会では、IoT列車というラズパイを搭載した列車がプラレール上を走行しており、運営が用意した競技システムにWebAPIで停止指示を送ると、列車の停止位置に応じてボーナスポイントを貰えるというゲームが存在します。",
+      "本年のカメラシステムは、このゲームを攻略することを役割の大半としています。カメラ上の動体を検出し、その動体が指定した位置を通過したら競技システムに停止指示を送るようにしています。",
+    ],
+    tools: ["Python", "OpenCV", "Flask", "Git", "GitHub", "GitHub Actions"],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2023-camera-system",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "輪講用通信システム",
+    image: "/products_imgs/FlaskAPI/API.png",
+    alt: "rakuten internship product",
+    description: [
+      "大学の講義で、通信に関して何か輪講をしなければならなくなったので、友人と共に、iOSアプリとWebAPIサーバ間の通信について輪講をしました。このシステムは、その際に実装した簡単なデモシステムです。",
+      "私はサーバサイドをPythonとFlaskで実装しました。ほとんど経験はありませんでしたが、あれこれ調べながら実装しました。",
+      "AWS等でデプロイはしていないため、輪講時には、開発用サーバを立ち上げてデモを行いました。",
+    ],
+    tools: ["Python", "Flask"],
+    links: [
+      {
+        href: "https://github.com/KakinokiKanta/TryFlaskAPI",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
     title: "ロボコン2022 走行体システム",
     image: "/products_imgs/robocon2022_sys/main_image.jpg",
     alt: "robocon2022 main system product",
@@ -126,47 +184,6 @@ export const PRODUCT_LIST = [
     links: [
       {
         href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2022-camera-system",
-        kinds: "GitHub",
-      },
-    ],
-  },
-  {
-    title: "ロボコン2023 走行体システム",
-    image: "/products_imgs/robocon2023_sys/main_image.png",
-    alt: "robocon2023 main system product",
-    description: [
-      "このシステムは、ETロボコン2023大会で開発したロボット側のシステムです。C++とPythonを用いてラズパイ上に実装しました。",
-      "本年の開発では、ゲーム内容に顔認識が必要だったため、YOLOを用いた物体検出を導入しました。また、昨年以上に精密な走行を実現するために、モーターのパワーで直接的に走行を制御するのではなく、ロボットの走行速度の実測値と指定値の差から次の指定値を判定する速度フィードバック制御を導入しました。",
-    ],
-    tools: [
-      "C++",
-      "Python",
-      "OpenCV",
-      "Git",
-      "GitHub",
-      "GitHub Actions",
-      "Raspberry Pi",
-    ],
-    links: [
-      {
-        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2023",
-        kinds: "GitHub",
-      },
-    ],
-  },
-  {
-    title: "ロボコン2023 カメラシステム",
-    image: "/products_imgs/robocon2023_camera/game_course_2023.png",
-    alt: "robocon2022 camera system product",
-    description: [
-      "このシステムは、ETロボコン2023大会で開発したカメラシステムです。",
-      "ETロボコン2023大会では、IoT列車というラズパイを搭載した列車がプラレール上を走行しており、運営が用意した競技システムにWebAPIで停止指示を送ると、列車の停止位置に応じてボーナスポイントを貰えるというゲームが存在します。",
-      "本年のカメラシステムは、このゲームを攻略することを役割の大半としています。カメラ上の動体を検出し、その動体が指定した位置を通過したら競技システムに停止指示を送るようにしています。",
-    ],
-    tools: ["Python", "OpenCV", "Flask", "Git", "GitHub", "GitHub Actions"],
-    links: [
-      {
-        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2023-camera-system",
         kinds: "GitHub",
       },
     ],
