@@ -11,6 +11,7 @@ export const AboutMe = () => {
       </div>
       <div className={styles.aboutContainer}>
         <div className={styles.parent}>
+          {/* TODO: githubAPI */}
           <Image
             src="/home_imgs/travel_back.JPG"
             alt="Kakinoki profile image"
