@@ -4,6 +4,7 @@ import { inter } from "@/lib/fontManager";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BgAnimation } from "@/components/Animation/BgAnimation";
+import styles from "./Layout.module.css";
 
 export const metadata: Metadata = {
   title: "柿木幹太のポートフォリオサイト",
@@ -16,6 +17,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="jp">
       <body className={inter.className}>
         <Header />
+        <div className={styles.position} id="pageTop"></div>
         {children}
         <BgAnimation />
         <Footer />
