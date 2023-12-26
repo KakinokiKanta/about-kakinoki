@@ -2,24 +2,28 @@ import { H1Animation } from "@/components/Animation/H1Animation";
 import Image from "next/image";
 import styles from "./AboutMe.module.css";
 import { ICONS_PATH } from "@/utils/socialIcons";
+import { UserImage } from "./UserImage";
+// import { gql, useQuery } from "@apollo/client";
 
 export const AboutMe = () => {
+  // const GET_USER_INFO = gql`
+  //   query {
+  //     viewer {
+  //       login
+  //     }
+  //   }
+  // `;
+
+  // const { data, error, loading } = useQuery(GET_USER_INFO);
+  // console.log(data);
+
   return (
     <section>
       <div className={styles.h1}>
         <H1Animation title="ABOUT ME" />
       </div>
       <div className={styles.aboutContainer}>
-        <div className={styles.parent}>
-          {/* TODO: githubAPI */}
-          <Image
-            src="/home_imgs/travel_back.JPG"
-            alt="Kakinoki profile image"
-            fill
-            style={{ objectFit: "cover" }}
-            sizes="(max-width: 768px) 50%, 30%"
-          />
-        </div>
+        <UserImage />
         <div className={styles.text}>
           <p>
             宮崎大学大学院の修士1年生です。工学研究科に在籍しており、学部生時代は工学部の情報システム工学科に在籍していました。プログラミングは大学入学から学び始め、最近はWebフロントについて1から学んでいます。
