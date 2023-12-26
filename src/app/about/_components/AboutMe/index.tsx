@@ -3,20 +3,8 @@ import Image from "next/image";
 import styles from "./AboutMe.module.css";
 import { ICONS_PATH } from "@/utils/socialIcons";
 import { UserImage } from "./UserImage";
-// import { gql, useQuery } from "@apollo/client";
 
 export const AboutMe = () => {
-  // const GET_USER_INFO = gql`
-  //   query {
-  //     viewer {
-  //       login
-  //     }
-  //   }
-  // `;
-
-  // const { data, error, loading } = useQuery(GET_USER_INFO);
-  // console.log(data);
-
   return (
     <section>
       <div className={styles.h1}>

@@ -4,8 +4,20 @@ import Image from "next/image";
 import { ApolloProvider } from "@apollo/client";
 import { apolloClient } from "@/lib/apolloClient";
 import styles from "./UserImage.module.css";
+import { gql, useQuery } from "@apollo/client";
 
 export const UserImage = () => {
+  // const GET_USER_INFO = gql`
+  //   query {
+  //     viewer {
+  //       login
+  //     }
+  //   }
+  // `;
+
+  // const { data, error, loading } = useQuery(GET_USER_INFO);
+  // console.log(data);
+
   return (
     <ApolloProvider client={apolloClient}>
       <div className={styles.parent}>
