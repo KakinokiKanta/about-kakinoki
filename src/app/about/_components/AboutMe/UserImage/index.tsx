@@ -7,13 +7,13 @@ import styles from "./UserImage.module.css";
 import { gql, useQuery } from "@apollo/client";
 
 export const UserImage = () => {
-  // const GET_USER_INFO = gql`
-  //   query {
-  //     viewer {
-  //       login
-  //     }
-  //   }
-  // `;
+  const GET_USER_INFO = gql`
+    query {
+      viewer {
+        login
+      }
+    }
+  `;
 
   // const { data, error, loading } = useQuery(GET_USER_INFO);
   // console.log(data);
