@@ -20,13 +20,6 @@ export const UserImage = () => {
       }
     }
   `;
-
-  // const variables = {
-  //   variables: {
-  //     userName: process.env.NEXT_PUBLIC_GITHUB_ID,
-  //   },
-  // };
-
   const { data, error, loading } = useQuery(GET_USER_INFO, {
     variables: { userName: process.env.NEXT_PUBLIC_GITHUB_ID },
   });
