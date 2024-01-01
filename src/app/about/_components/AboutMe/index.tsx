@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./AboutMe.module.css";
 import { ICONS_PATH } from "@/utils/socialIcons";
 import { UserImage } from "./UserImage";
+import { GraphqlWrapper } from "./GraphqlWrapper";
 
 export const AboutMe = () => {
   return (
@@ -11,7 +12,7 @@ export const AboutMe = () => {
         <H1Animation title="ABOUT ME" />
       </div>
       <div className={styles.aboutContainer}>
-        <UserImage />
+        <GraphqlWrapper />
         <div className={styles.text}>
           <p>
             宮崎大学大学院の修士1年生です。工学研究科に在籍しており、学部生時代は工学部の情報システム工学科に在籍していました。プログラミングは大学入学から学び始め、最近はWebフロントについて1から学んでいます。
