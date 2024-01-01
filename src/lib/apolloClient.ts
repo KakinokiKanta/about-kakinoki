@@ -9,7 +9,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
+      authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_API_KEY}`,
     },
   };
 });

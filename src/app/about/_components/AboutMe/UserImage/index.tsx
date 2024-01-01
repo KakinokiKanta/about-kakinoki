@@ -4,15 +4,34 @@ import styles from "./UserImage.module.css";
 
 export const UserImage = () => {
   const GET_USER_INFO = gql`
-    query {
-      viewer {
-        login
+    query ($userName: String!) {
+      user(login: $userName) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+              }
+            }
+          }
+        }
       }
     }
   `;
 
-  const { data, error, loading } = useQuery(GET_USER_INFO);
+  // const variables = {
+  //   variables: {
+  //     userName: process.env.NEXT_PUBLIC_GITHUB_ID,
+  //   },
+  // };
+
+  const { data, error, loading } = useQuery(GET_USER_INFO, {
+    variables: { userName: process.env.NEXT_PUBLIC_GITHUB_ID },
+  });
   console.log(data);
+  console.log(error);
 
   return (
     <div className={styles.parent}>
