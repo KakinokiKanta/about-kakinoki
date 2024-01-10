@@ -7,3 +7,10 @@
   overflow: hidden;
   background-color: #fff;
 }
+
+@media (width <= 768px) {
+  .parent {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
