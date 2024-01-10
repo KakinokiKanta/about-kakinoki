@@ -1,0 +1,16 @@
+.parent {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+@media (width <= 768px) {
+  .parent {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}

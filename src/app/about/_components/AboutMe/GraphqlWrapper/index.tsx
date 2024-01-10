@@ -2,12 +2,12 @@
 
 import { ApolloProvider } from "@apollo/client";
 import { apolloClient } from "@/lib/apolloClient";
-import { UserImage } from "../UserImage";
+import { GithubContribution } from "./GithubContribution";
 
 export const GraphqlWrapper = () => {
   return (
     <ApolloProvider client={apolloClient}>
-      <UserImage />
+      <GithubContribution />
     </ApolloProvider>
   );
 };

@@ -12,7 +12,7 @@ export const AboutMe = () => {
         <H1Animation title="ABOUT ME" />
       </div>
       <div className={styles.aboutContainer}>
-        <GraphqlWrapper />
+        <UserImage />
         <div className={styles.text}>
           <p>
             宮崎大学大学院の修士1年生です。工学研究科に在籍しており、学部生時代は工学部の情報システム工学科に在籍していました。プログラミングは大学入学から学び始め、最近はWebフロントについて1から学んでいます。
@@ -47,6 +47,9 @@ export const AboutMe = () => {
             })}
           </div>
         </div>
+      </div>
+      <div className={styles.contribution}>
+        <GraphqlWrapper />
       </div>
     </section>
   );

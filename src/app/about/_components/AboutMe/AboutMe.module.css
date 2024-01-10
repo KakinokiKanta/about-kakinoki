@@ -30,6 +30,11 @@
   transform: scale(1.1);
 }
 
+.contribution {
+  width: 100%;
+  margin-top: 20px;
+}
+
 @media (width <= 768px) {
   .aboutContainer {
     flex-direction: column;
