@@ -4,9 +4,9 @@ import styles from "./UserImage.module.css";
 
 export const UserImage = () => {
   const GET_USER_INFO = gql`
-    query ($userName: String!) {
+    query ($userName: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $userName) {
-        contributionsCollection {
+        contributionsCollection(from: $from, to: $to) {
           contributionCalendar {
             totalContributions
             weeks {
@@ -21,7 +21,11 @@ export const UserImage = () => {
     }
   `;
   const { data, error, loading } = useQuery(GET_USER_INFO, {
-    variables: { userName: process.env.NEXT_PUBLIC_GITHUB_ID },
+    variables: {
+      userName: process.env.NEXT_PUBLIC_GITHUB_ID,
+      from: `${new Date().getFullYear()}-01-01T00:00:00`,
+      to: `${new Date().getFullYear()}-12-31T23:59:59`,
+    },
   });
   console.log(data);
   console.log(error);
