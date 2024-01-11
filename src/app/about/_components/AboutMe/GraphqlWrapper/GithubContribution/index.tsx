@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { gql, useQuery } from "@apollo/client";
 import styles from "./GithubContribution.module.css";
 import React from "react";
@@ -26,7 +25,7 @@ export const GithubContribution = () => {
     }
   ];
 
-  const YEAR = new Date().getFullYear() - 1;
+  const YEAR = new Date().getFullYear();
 
   const GET_USER_INFO = gql`
     query ($userName: String!, $from: DateTime!, $to: DateTime!) {
