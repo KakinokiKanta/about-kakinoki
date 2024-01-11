@@ -84,14 +84,17 @@ export const GithubContribution = () => {
               data!.user.contributionsCollection.contributionCalendar
                 .totalContributions
             }{" "}
-            contributions in {YEAR}
+            contributions in {YEAR} (from GitHub API)
           </p>
           {/* github apiで取得した最初の日付が何曜日かを判定(gridが何段目から始まるかを判断するため) */}
           <div className={styles.container}>
             <div className={styles.grid}>
               {contributionWeeks.map((week, index) => {
                 return (
-                  <div className={styles.column} key={index}>
+                  <div
+                    className={index === 0 ? styles.columnStart : styles.column}
+                    key={index}
+                  >
                     {week.contributionDays.map((day) => {
                       return (
                         <React.Fragment key={day.date}>

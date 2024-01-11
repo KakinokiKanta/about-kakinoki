@@ -1,15 +1,31 @@
 .container {
   border: 1px solid #a9a9a9;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .grid {
-  display: grid;
+  margin: 20px 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.columnStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .panel {
   width: 10px;
   height: 10px;
+  margin: 2px;
+  border: 1px solid #ddd;
   border-radius: 2px;
 }
 
@@ -29,5 +45,12 @@
   background-color: #f20;
 }
 
+.bottom {
+  margin: 10px 50px;
+}
+
 @media (width <= 768px) {
+  .bottom {
+    margin: 10px 20px;
+  }
 }
