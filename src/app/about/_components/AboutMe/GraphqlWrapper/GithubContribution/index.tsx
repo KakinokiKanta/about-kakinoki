@@ -1,28 +1,9 @@
 import Image from "next/image";
 import { gql, useQuery } from "@apollo/client";
 import styles from "./GithubContribution.module.css";
+import React from "react";
 
 export const GithubContribution = () => {
-  const YEAR = new Date().getFullYear() - 1;
-
-  const GET_USER_INFO = gql`
-    query ($userName: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $userName) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            totalContributions
-            weeks {
-              contributionDays {
-                contributionCount
-                date
-              }
-            }
-          }
-        }
-      }
-    }
-  `;
-
   type ApiResponse = {
     user: {
       contributionsCollection: {
@@ -45,6 +26,26 @@ export const GithubContribution = () => {
     }
   ];
 
+  const YEAR = new Date().getFullYear() - 1;
+
+  const GET_USER_INFO = gql`
+    query ($userName: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $userName) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
   const { data, error, loading } = useQuery<ApiResponse>(GET_USER_INFO, {
     variables: {
       userName: process.env.NEXT_PUBLIC_GITHUB_ID,
@@ -58,8 +59,21 @@ export const GithubContribution = () => {
   const contributionWeeks = loading
     ? []
     : [...data!.user.contributionsCollection.contributionCalendar.weeks];
-
   console.log(contributionWeeks);
+
+  const colorJudge = (contributionCount: number) => {
+    if (contributionCount === 0) {
+      return styles.gray;
+    } else if (contributionCount <= 4) {
+      return styles.light;
+    } else if (contributionCount <= 9) {
+      return styles.normal;
+    } else if (contributionCount <= 14) {
+      return styles.dark;
+    } else {
+      return styles.black;
+    }
+  };
 
   return (
     <>
@@ -80,9 +94,13 @@ export const GithubContribution = () => {
                   <div className={styles.column} key={index}>
                     {week.contributionDays.map((day) => {
                       return (
-                        <div className={styles.panel} key={index}>
-                          <p>{day.contributionCount}</p>
-                        </div>
+                        <React.Fragment key={day.date}>
+                          <div
+                            className={`${styles.panel} ${colorJudge(
+                              day.contributionCount
+                            )}`}
+                          ></div>
+                        </React.Fragment>
                       );
                     })}
                   </div>

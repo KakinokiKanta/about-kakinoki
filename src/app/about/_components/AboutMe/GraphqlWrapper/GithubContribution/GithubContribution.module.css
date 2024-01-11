@@ -1,16 +1,33 @@
-.parent {
-  position: relative;
-  width: 30%;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  background-color: #fff;
+.container {
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+}
+
+.panel {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.gray {
+  background-color: #eee;
+}
+.light {
+  background-color: #fb0;
+}
+.normal {
+  background-color: #f80;
+}
+.dark {
+  background-color: #f50;
+}
+.black {
+  background-color: #f20;
 }
 
 @media (width <= 768px) {
-  .parent {
-    width: 60%;
-    margin-bottom: 1rem;
-  }
 }
