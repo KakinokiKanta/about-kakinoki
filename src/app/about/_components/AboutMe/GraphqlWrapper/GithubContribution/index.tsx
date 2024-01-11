@@ -78,7 +78,7 @@ export const GithubContribution = () => {
   return (
     <>
       {!loading && (
-        <>
+        <div className={styles.github}>
           <p>
             {
               data!.user.contributionsCollection.contributionCalendar
@@ -117,7 +117,7 @@ export const GithubContribution = () => {
               <span className={styles.svgIntro}>Less More</span>
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

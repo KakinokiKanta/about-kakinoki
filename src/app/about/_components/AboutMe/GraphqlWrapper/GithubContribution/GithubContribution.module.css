@@ -1,11 +1,19 @@
+.github {
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+}
+
 .container {
+  width: fit-content;
+  max-width: 100%;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
   background-color: #fff;
 }
 
 .grid {
-  margin: 20px 10px;
+  margin: 20px 10px 10px 10px;
   display: flex;
   overflow: auto;
 }
@@ -46,11 +54,11 @@
 }
 
 .bottom {
-  margin: 10px 50px;
+  margin: 10px 50px 20px 50px;
 }
 
 @media (width <= 768px) {
   .bottom {
-    margin: 10px 20px;
+    margin: 10px 20px 20px 50px;
   }
 }
