@@ -52,13 +52,10 @@ export const GithubContribution = () => {
       to: `${YEAR}-12-31T23:59:59`,
     },
   });
-  console.log(data);
-  console.log(error);
 
   const contributionWeeks = loading
     ? []
     : [...data!.user.contributionsCollection.contributionCalendar.weeks];
-  console.log(contributionWeeks);
 
   const colorJudge = (contributionCount: number) => {
     if (contributionCount === 0) {
