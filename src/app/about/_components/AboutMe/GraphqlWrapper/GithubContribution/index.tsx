@@ -86,7 +86,6 @@ export const GithubContribution = () => {
             }{" "}
             contributions in {YEAR} (from GitHub API)
           </p>
-          {/* github apiで取得した最初の日付が何曜日かを判定(gridが何段目から始まるかを判断するため) */}
           <div className={styles.container}>
             <div className={styles.grid}>
               {contributionWeeks.map((week, index) => {
@@ -111,10 +110,13 @@ export const GithubContribution = () => {
               })}
             </div>
             <div className={styles.bottom}>
-              <span className={styles.learn}>
-                Learn how we count contriburions
-              </span>
-              <span className={styles.svgIntro}>Less More</span>
+              <div className={styles.svgIntro}>Less</div>
+              <div className={`${styles.panel} ${styles.gray}`}></div>
+              <div className={`${styles.panel} ${styles.light}`}></div>
+              <div className={`${styles.panel} ${styles.normal}`}></div>
+              <div className={`${styles.panel} ${styles.dark}`}></div>
+              <div className={`${styles.panel} ${styles.black}`}></div>
+              <div className={styles.svgIntro}>More</div>
             </div>
           </div>
         </div>
