@@ -10,15 +10,6 @@
   margin: 0 auto;
 }
 
-.parent {
-  position: relative;
-  width: 30%;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-}
-
 .text {
   width: 65%;
 }
@@ -39,6 +30,11 @@
   transform: scale(1.1);
 }
 
+.contribution {
+  width: 100%;
+  margin-top: 50px;
+}
+
 @media (width <= 768px) {
   .aboutContainer {
     flex-direction: column;
@@ -52,5 +48,9 @@
 
   .text {
     width: 100%;
+  }
+
+  .contribution {
+    margin-top: 20px;
   }
 }

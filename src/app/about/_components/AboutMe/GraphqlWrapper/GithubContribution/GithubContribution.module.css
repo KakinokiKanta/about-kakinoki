@@ -1,0 +1,71 @@
+.github {
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.grid {
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.columnStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.panel {
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.gray {
+  background-color: #eee;
+}
+.light {
+  background-color: #fb0;
+}
+.normal {
+  background-color: #f80;
+}
+.dark {
+  background-color: #f50;
+}
+.black {
+  background-color: #f20;
+}
+
+.bottom {
+  margin: 10px 50px 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.svgIntro {
+  font-size: 14px;
+}
+
+@media (width <= 768px) {
+  .bottom {
+    margin: 10px 20px 20px 50px;
+  }
+}
