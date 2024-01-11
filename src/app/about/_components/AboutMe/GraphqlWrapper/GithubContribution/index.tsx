@@ -77,7 +77,8 @@ export const GithubContribution = () => {
 
   return (
     <>
-      {!loading && (
+      <div></div>
+      {/* {!loading && (
         <div className={styles.github}>
           <p>
             {
@@ -120,7 +121,7 @@ export const GithubContribution = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
