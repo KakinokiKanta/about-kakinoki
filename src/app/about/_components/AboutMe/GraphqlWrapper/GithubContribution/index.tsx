@@ -23,7 +23,29 @@ export const GithubContribution = () => {
     }
   `;
 
-  const { data, error, loading } = useQuery(GET_USER_INFO, {
+  type ApiResponse = {
+    user: {
+      contributionsCollection: {
+        contributionCalendar: {
+          totalContributions: number;
+          weeks: Weeks;
+        };
+      };
+    };
+  };
+
+  type Weeks = [
+    {
+      contributionDays: [
+        {
+          contributionCount: number;
+          date: string;
+        }
+      ];
+    }
+  ];
+
+  const { data, error, loading } = useQuery<ApiResponse>(GET_USER_INFO, {
     variables: {
       userName: process.env.NEXT_PUBLIC_GITHUB_ID,
       from: `${YEAR}-01-01T00:00:00`,
@@ -33,11 +55,11 @@ export const GithubContribution = () => {
   console.log(data);
   console.log(error);
 
-  const date = loading
-    ? new Date()
-    : new Date(
-        `${data.user.contributionsCollection.contributionCalendar.weeks[0].contributionDays[0].date}`
-      );
+  const contributionWeeks = loading
+    ? []
+    : [...data!.user.contributionsCollection.contributionCalendar.weeks];
+
+  console.log(contributionWeeks);
 
   return (
     <>
@@ -45,13 +67,35 @@ export const GithubContribution = () => {
         <>
           <p>
             {
-              data.user.contributionsCollection.contributionCalendar
+              data!.user.contributionsCollection.contributionCalendar
                 .totalContributions
             }{" "}
             contributions in {YEAR}
           </p>
           {/* github apiで取得した最初の日付が何曜日かを判定(gridが何段目から始まるかを判断するため) */}
-          <p>{date.getDay()}</p>
+          <div className={styles.container}>
+            <div className={styles.grid}>
+              {contributionWeeks.map((week, index) => {
+                return (
+                  <div className={styles.column} key={index}>
+                    {week.contributionDays.map((day) => {
+                      return (
+                        <div className={styles.panel} key={index}>
+                          <p>{day.contributionCount}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+            <div className={styles.bottom}>
+              <span className={styles.learn}>
+                Learn how we count contriburions
+              </span>
+              <span className={styles.svgIntro}>Less More</span>
+            </div>
+          </div>
         </>
       )}
     </>
