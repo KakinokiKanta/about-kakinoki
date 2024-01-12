@@ -9,8 +9,8 @@ type TooltipProps = {
 export const Tooltip = (props: TooltipProps) => {
   return (
     <div className={styles.tooltip}>
+      <div className={styles.tooltipText}>{props.text}</div>
       {props.children}
-      <div className={styles.tooltiptext}>{props.text}</div>
     </div>
   );
 };
