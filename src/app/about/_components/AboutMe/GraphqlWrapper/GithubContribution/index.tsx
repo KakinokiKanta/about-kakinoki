@@ -54,9 +54,10 @@ export const GithubContribution = () => {
     },
   });
 
-  const contributionWeeks = loading
-    ? []
-    : [...data!.user.contributionsCollection.contributionCalendar.weeks];
+  const contributionWeeks =
+    loading || error
+      ? []
+      : [...data!.user.contributionsCollection.contributionCalendar.weeks];
 
   const colorJudge = (contributionCount: number) => {
     if (contributionCount === 0) {
@@ -74,39 +75,51 @@ export const GithubContribution = () => {
 
   return (
     <>
-      {!loading && (
+      {!error && (
         <div className={styles.github}>
           <p>
-            {
-              data!.user.contributionsCollection.contributionCalendar
-                .totalContributions
-            }{" "}
+            {loading
+              ? "XX"
+              : data!.user.contributionsCollection.contributionCalendar
+                  .totalContributions}{" "}
             contributions in {YEAR} (from GitHub API)
           </p>
           <div className={styles.container}>
             <div className={styles.grid}>
-              {contributionWeeks.map((week, index) => {
-                return (
-                  <div
-                    className={index === 0 ? styles.columnStart : styles.column}
-                    key={index}
-                  >
-                    {week.contributionDays.map((day) => {
-                      return (
-                        <React.Fragment key={day.date}>
-                          <Tooltip text="contributions">
-                            <div
-                              className={`${styles.panel} ${colorJudge(
-                                day.contributionCount
-                              )}`}
-                            ></div>
-                          </Tooltip>
-                        </React.Fragment>
-                      );
-                    })}
-                  </div>
-                );
-              })}
+              {loading ? (
+                <div className={styles.loading}></div>
+              ) : (
+                contributionWeeks.map((week, index) => {
+                  return (
+                    <div
+                      className={
+                        index === 0 ? styles.columnStart : styles.column
+                      }
+                      key={index}
+                    >
+                      {week.contributionDays.map((day) => {
+                        return (
+                          <React.Fragment key={day.date}>
+                            <Tooltip
+                              text={`${
+                                day.contributionCount === 0
+                                  ? "No"
+                                  : `${day.contributionCount}`
+                              } contributions on ${day.date}`}
+                            >
+                              <div
+                                className={`${styles.panel} ${colorJudge(
+                                  day.contributionCount
+                                )}`}
+                              ></div>
+                            </Tooltip>
+                          </React.Fragment>
+                        );
+                      })}
+                    </div>
+                  );
+                })
+              )}
             </div>
             <div className={styles.bottom}>
               <div className={styles.svgIntro}>Less</div>

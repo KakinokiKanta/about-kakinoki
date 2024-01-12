@@ -18,6 +18,11 @@
   overflow: auto;
 }
 
+.loading {
+  height: 112px;
+  width: 848px;
+}
+
 .columnStart {
   display: flex;
   flex-direction: column;
