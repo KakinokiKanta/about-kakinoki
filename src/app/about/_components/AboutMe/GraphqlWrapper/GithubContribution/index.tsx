@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 import styles from "./GithubContribution.module.css";
 import React from "react";
+import { Tooltip } from "@/components/Tooltip";
 
 export const GithubContribution = () => {
   type ApiResponse = {
@@ -93,11 +94,13 @@ export const GithubContribution = () => {
                     {week.contributionDays.map((day) => {
                       return (
                         <React.Fragment key={day.date}>
-                          <div
-                            className={`${styles.panel} ${colorJudge(
-                              day.contributionCount
-                            )}`}
-                          ></div>
+                          <Tooltip text="contributions">
+                            <div
+                              className={`${styles.panel} ${colorJudge(
+                                day.contributionCount
+                              )}`}
+                            ></div>
+                          </Tooltip>
                         </React.Fragment>
                       );
                     })}
