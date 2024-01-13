@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 import styles from "./GithubContribution.module.css";
 import React from "react";
+import { Tooltip } from "@/components/Tooltip";
 
 export const GithubContribution = () => {
   type ApiResponse = {
@@ -53,9 +54,10 @@ export const GithubContribution = () => {
     },
   });
 
-  const contributionWeeks = loading
-    ? []
-    : [...data!.user.contributionsCollection.contributionCalendar.weeks];
+  const contributionWeeks =
+    loading || error
+      ? []
+      : [...data!.user.contributionsCollection.contributionCalendar.weeks];
 
   const colorJudge = (contributionCount: number) => {
     if (contributionCount === 0) {
@@ -73,37 +75,57 @@ export const GithubContribution = () => {
 
   return (
     <>
-      {!loading && (
+      {!error && (
         <div className={styles.github}>
           <p>
-            {
-              data!.user.contributionsCollection.contributionCalendar
-                .totalContributions
-            }{" "}
+            {loading
+              ? "XX"
+              : data!.user.contributionsCollection.contributionCalendar
+                  .totalContributions}{" "}
             contributions in {YEAR} (from GitHub API)
           </p>
           <div className={styles.container}>
             <div className={styles.grid}>
-              {contributionWeeks.map((week, index) => {
-                return (
-                  <div
-                    className={index === 0 ? styles.columnStart : styles.column}
-                    key={index}
-                  >
-                    {week.contributionDays.map((day) => {
-                      return (
-                        <React.Fragment key={day.date}>
-                          <div
-                            className={`${styles.panel} ${colorJudge(
-                              day.contributionCount
-                            )}`}
-                          ></div>
-                        </React.Fragment>
-                      );
-                    })}
-                  </div>
-                );
-              })}
+              {loading ? (
+                <div className={styles.loading}></div>
+              ) : (
+                contributionWeeks.map((week, index) => {
+                  return (
+                    <div
+                      className={
+                        index === 0 ? styles.columnStart : styles.column
+                      }
+                      key={index}
+                    >
+                      {week.contributionDays.map((day) => {
+                        return (
+                          <React.Fragment key={day.date}>
+                            <div
+                              className={`${styles.panel} ${colorJudge(
+                                day.contributionCount
+                              )}`}
+                            ></div>
+                            {/* ツールチップの実装後にレイアウトが崩れる問題が起きたため、コメントアウトしている
+                            <Tooltip
+                              text={`${
+                                day.contributionCount === 0
+                                  ? "No"
+                                  : `${day.contributionCount}`
+                              } contributions on ${day.date}`}
+                            >
+                              <div
+                                className={`${styles.panel} ${colorJudge(
+                                  day.contributionCount
+                                )}`}
+                              ></div>
+                            </Tooltip> */}
+                          </React.Fragment>
+                        );
+                      })}
+                    </div>
+                  );
+                })
+              )}
             </div>
             <div className={styles.bottom}>
               <div className={styles.svgIntro}>Less</div>
