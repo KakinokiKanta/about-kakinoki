@@ -2,18 +2,21 @@
   width: fit-content;
   max-width: 100%;
   margin: auto;
+  /* overflow: visible; */
 }
 
 .container {
   width: fit-content;
   max-width: 100%;
+  padding: 20px 10px;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
   background-color: #fff;
+  /* overflow: visible; */
 }
 
 .grid {
-  margin: 20px 10px 10px 10px;
+  /* margin: 20px 10px 10px 10px; */
   display: flex;
   overflow: auto;
 }
@@ -59,7 +62,7 @@
 }
 
 .bottom {
-  margin: 10px 50px 20px 50px;
+  margin: 10px 50px 0 50px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -72,5 +75,11 @@
 @media (width <= 768px) {
   .bottom {
     margin: 10px 20px 20px 50px;
+  }
+}
+
+@media (width >= 1000px) {
+  .grid {
+    overflow-x: visible;
   }
 }

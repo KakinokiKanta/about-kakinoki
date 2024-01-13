@@ -9,10 +9,14 @@
 
 .tooltipText {
   display: none;
-  position: fixed;
-  /* transform: translateY(-50%); */
+  /* position: fixed; */
+  /* margin-top: -30px; */
+  /* margin-left: -80px; */
+  position: absolute;
+  top: -30px;
+  left: -80px;
   width: max-content;
-  overflow: visible;
+  /* overflow: visible; */
   background-color: #333;
   color: #fff;
   padding: 5px;
