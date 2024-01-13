@@ -100,6 +100,12 @@ export const GithubContribution = () => {
                       {week.contributionDays.map((day) => {
                         return (
                           <React.Fragment key={day.date}>
+                            <div
+                              className={`${styles.panel} ${colorJudge(
+                                day.contributionCount
+                              )}`}
+                            ></div>
+                            {/* ツールチップの実装後にレイアウトが崩れる問題が起きたため、コメントアウトしている
                             <Tooltip
                               text={`${
                                 day.contributionCount === 0
@@ -112,7 +118,7 @@ export const GithubContribution = () => {
                                   day.contributionCount
                                 )}`}
                               ></div>
-                            </Tooltip>
+                            </Tooltip> */}
                           </React.Fragment>
                         );
                       })}
