@@ -2,6 +2,8 @@ import { HomeTop } from "@/app/_components/HomeTop";
 import { HomeAbout } from "@/app/_components/HomeAbout";
 import { HomeContent } from "./_components/HomeContent";
 import { HomeProducts } from "./_components/HomeProducts";
+import { Suspense } from "react";
+import { Loading } from "./_loading/Loading";
 
 const Home = () => {
   const HOME_CONTENTS = [
@@ -30,14 +32,17 @@ const Home = () => {
   ];
 
   return (
-    <main>
-      <HomeTop />
-      <HomeAbout />
-      {HOME_CONTENTS.map((item) => {
-        return <HomeContent {...item} key={item.h2} />;
-      })}
-      <HomeProducts />
-    </main>
+    <>
+      <Loading />
+      <main>
+        <HomeTop />
+        <HomeAbout />
+        {HOME_CONTENTS.map((item) => {
+          return <HomeContent {...item} key={item.h2} />;
+        })}
+        <HomeProducts />
+      </main>
+    </>
   );
 };
 
