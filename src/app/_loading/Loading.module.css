@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+  pointer-events: none;
   z-index: 5000;
   animation: blur 1.5s ease forwards;
 }
@@ -20,11 +21,5 @@
   100% {
     opacity: 0;
     filter: blur(10px);
-    display: none;
   }
-}
-
-.none {
-  opacity: 0;
-  /* display: none; */
 }
