@@ -1,9 +1,3 @@
-.container {
-  display: flex;
-  width: calc(100% / 3);
-  text-align: center;
-}
-
 .content {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);

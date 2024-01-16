@@ -1,0 +1,5 @@
+.container {
+  display: flex;
+  width: calc(100% / 3);
+  text-align: center;
+}
