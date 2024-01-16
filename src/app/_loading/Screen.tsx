@@ -9,7 +9,9 @@ export const Screen = () => {
         alt="my logo"
         width={250}
         height={50}
-        sizes="(max-width: 1000px) 175px, 250px"
+        priority
+        loading="eager"
+        sizes="50px, 250px"
         className={styles.logo}
       />
     </div>
