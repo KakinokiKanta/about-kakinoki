@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import styles from "./Products.module.css";
 import { ModalWin } from "./ModalWin";
 
@@ -15,6 +14,7 @@ type ProductsProps = {
     href: string;
     kinds: string;
   }[];
+  children?: ReactNode;
 };
 
 export const Products = (props: ProductsProps) => {
@@ -44,19 +44,8 @@ export const Products = (props: ProductsProps) => {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.content} onClick={manageModal}>
-          <div className={styles.parent}>
-            <Image
-              className={styles.image}
-              src={props.image}
-              alt={props.alt}
-              fill
-              sizes="30vw"
-            />
-          </div>
-          <h3 className={styles.h3}>{props.title}</h3>
-        </div>
+      <div className={styles.content} onClick={manageModal}>
+        {props.children}
       </div>
       {isOpen && (
         <ModalWin

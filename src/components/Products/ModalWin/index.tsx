@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ModalWin.module.css";
-import React from "react";
+import React, { ReactNode } from "react";
 import { Close } from "@/components/Icons";
 
 type ModalWinProps = {
@@ -15,6 +15,7 @@ type ModalWinProps = {
     href: string;
     kinds: string;
   }[];
+  children?: ReactNode;
 };
 
 export const ModalWin = (props: ModalWinProps) => {

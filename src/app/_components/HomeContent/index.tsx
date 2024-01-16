@@ -1,6 +1,5 @@
 import { CircleImage } from "@/components/CircleIImage";
 import styles from "./HomeContent.module.css";
-import { rowdies } from "@/lib/fontManager";
 import { LinkButton } from "@/components/LinkButton";
 import { H2Animation } from "@/components/Animation/H2Animation";
 

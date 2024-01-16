@@ -2,7 +2,6 @@
   width: fit-content;
   max-width: 100%;
   margin: auto;
-  /* overflow: visible; */
 }
 
 .container {
@@ -12,11 +11,9 @@
   border: 1px solid #a9a9a9;
   border-radius: 5px;
   background-color: #fff;
-  /* overflow: visible; */
 }
 
 .grid {
-  /* margin: 20px 10px 10px 10px; */
   display: flex;
   overflow: auto;
 }

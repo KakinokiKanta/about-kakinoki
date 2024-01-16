@@ -1,8 +1,8 @@
 import React from "react";
 import { H1Animation } from "@/components/Animation/H1Animation";
-import { Products } from "@/components/Products";
 import { PRODUCT_LIST } from "@/utils/productList";
 import styles from "./AllProducts.module.css";
+import { ProductContainer } from "@/components/Products/ProductContainer";
 
 const AllProducts = () => {
   return (
@@ -15,7 +15,7 @@ const AllProducts = () => {
           {PRODUCT_LIST.map((item, index) => {
             return (
               <React.Fragment key={item.title}>
-                <Products {...item} />
+                <ProductContainer {...item} />
               </React.Fragment>
             );
           })}
