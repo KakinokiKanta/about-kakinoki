@@ -2,8 +2,8 @@ import { HomeTop } from "@/app/_components/HomeTop";
 import { HomeAbout } from "@/app/_components/HomeAbout";
 import { HomeContent } from "./_components/HomeContent";
 import { HomeProducts } from "./_components/HomeProducts";
-import { Suspense } from "react";
 import { Loading } from "./_loading/Loading";
+import { Screen } from "./_loading/Screen";
 
 const Home = () => {
   const HOME_CONTENTS = [
@@ -33,7 +33,9 @@ const Home = () => {
 
   return (
     <>
-      <Loading />
+      <Loading>
+        <Screen />
+      </Loading>
       <main>
         <HomeTop />
         <HomeAbout />

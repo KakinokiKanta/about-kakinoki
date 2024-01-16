@@ -1,39 +1,28 @@
-"use client";
+// "use client";
 
-import { useEffect, useState } from "react";
+// import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 import styles from "./Loading.module.css";
 
-export const Loading = () => {
-  const [isShowLoading, setIsShowLoading] = useState(true);
+type LoadingProps = {
+  children: ReactNode;
+};
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsShowLoading(false);
-    }, 1000);
-  });
+export const Loading = (props: LoadingProps) => {
+  // const [isShowLoading, setIsShowLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsShowLoading(false);
+  //   }, 1000);
+  // });
 
   return (
     <>
-      {isShowLoading && (
-        <div className={styles.full}>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-          <p>loading...</p>
-        </div>
-      )}
+      {/* {isShowLoading && (
+        <div className={styles.animation}>{props.children}</div>
+      )} */}
+      <div className={styles.animation}>{props.children}</div>
     </>
   );
 };
