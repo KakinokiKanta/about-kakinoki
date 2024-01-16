@@ -1,6 +1,6 @@
 import { Products } from ".";
 import { ProductContent } from "./ProductContent";
-import styles from "./productContainer.module.css";
+import styles from "./ProductContainer.module.css";
 
 type ProductContainerProps = {
   title: string;

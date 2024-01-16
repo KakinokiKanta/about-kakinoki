@@ -1,9 +1,9 @@
 import React from "react";
 import { H2Animation } from "@/components/Animation/H2Animation";
 import styles from "./HomeProducts.module.css";
-import { Products } from "@/components/Products";
 import { LinkButton } from "@/components/LinkButton";
 import { PRODUCT_LIST } from "@/utils/productList";
+import { ProductContainer } from "@/components/Products/ProductContainer";
 
 export const HomeProducts = () => {
   return (
@@ -13,7 +13,7 @@ export const HomeProducts = () => {
         {PRODUCT_LIST.map((item, index) => {
           return (
             <React.Fragment key={item.title}>
-              {index < 3 && <Products {...item} />}
+              {index < 3 && <ProductContainer {...item} />}
             </React.Fragment>
           );
         })}
