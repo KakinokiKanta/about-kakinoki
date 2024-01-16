@@ -1,7 +1,6 @@
-"use client";
-
+// "use client";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import styles from "./CircleImage.module.css";
 
 type CircleImageProps = {
@@ -9,13 +8,13 @@ type CircleImageProps = {
 };
 
 export const CircleImage = (props: CircleImageProps) => {
-  const [profileImage, setProfileImage] = useState(props.image_path);
+  // const [profileImage, setProfileImage] = useState(props.image_path);
 
   return (
     <div className={styles.parent}>
       <Image
         className={styles.image}
-        src={profileImage}
+        src={props.image_path}
         alt="Photo for self-introduction"
         fill
         sizes="50vw"
