@@ -14,19 +14,6 @@ export const H1Animation = (props: H1AnimationProps) => {
     triggerOnce: true,
   });
 
-  // let animationClass = "";
-  // switch (props.animation) {
-  //   case "fadein":
-  //     animationClass = styles.fadein;
-  //     break;
-  //   case "slideleft":
-  //     animationClass = styles.slideleft;
-  //     break;
-  //   default:
-  //     animationClass = styles.slideright;
-  //     break;
-  // }
-
   return (
     <h1
       ref={ref}
