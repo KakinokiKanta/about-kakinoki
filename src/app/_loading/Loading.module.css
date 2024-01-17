@@ -10,7 +10,7 @@
   text-align: center;
   pointer-events: none;
   z-index: 5000;
-  animation: blur 1.5s ease forwards;
+  animation: blur 2s ease forwards;
 }
 
 @keyframes blur {

@@ -5,6 +5,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BgAnimation } from "@/components/Animation/BgAnimation";
 import styles from "./Layout.module.css";
+import { Suspense } from "react";
+import { Screen } from "./_loading/Screen";
+import { Loading } from "./_loading/Loading";
 
 export const metadata: Metadata = {
   title: "柿木幹太のポートフォリオサイト",
@@ -16,11 +19,16 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="jp">
       <body className={inter.className}>
-        <Header />
-        <div className={styles.position} id="pageTop"></div>
-        {children}
-        <BgAnimation />
-        <Footer />
+        <Suspense fallback={<Screen />}>
+          <Loading>
+            <Screen />
+          </Loading>
+          <Header />
+          <div className={styles.position} id="pageTop"></div>
+          {children}
+          <BgAnimation />
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

@@ -2,9 +2,6 @@ import { HomeTop } from "@/app/_components/HomeTop";
 import { HomeAbout } from "@/app/_components/HomeAbout";
 import { HomeContent } from "./_components/HomeContent";
 import { HomeProducts } from "./_components/HomeProducts";
-import { Loading } from "./_loading/Loading";
-import { Screen } from "./_loading/Screen";
-import { Suspense } from "react";
 
 const Home = () => {
   const HOME_CONTENTS = [
@@ -34,19 +31,14 @@ const Home = () => {
 
   return (
     <>
-      <Suspense fallback={<Screen />}>
-        <Loading>
-          <Screen />
-        </Loading>
-        <main>
-          <HomeTop />
-          <HomeAbout />
-          {HOME_CONTENTS.map((item) => {
-            return <HomeContent {...item} key={item.h2} />;
-          })}
-          <HomeProducts />
-        </main>
-      </Suspense>
+      <main>
+        <HomeTop />
+        <HomeAbout />
+        {HOME_CONTENTS.map((item) => {
+          return <HomeContent {...item} key={item.h2} />;
+        })}
+        <HomeProducts />
+      </main>
     </>
   );
 };

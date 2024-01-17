@@ -10,7 +10,7 @@ export const Screen = () => {
         width={250}
         height={50}
         priority
-        loading="eager"
+        // loading="eager"
         sizes="50px, 250px"
         className={styles.logo}
       />
