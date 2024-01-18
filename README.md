@@ -1,13 +1,13 @@
 ## about-kakinoki
 
-情報系学生でエンジニアの卵な Kakinoki について,これまでの活動を知ってもらうためのポートフォリオサイトです.
+情報系学生でエンジニアの卵な Kakinoki について、これまでの活動を知ってもらうためのポートフォリオサイトです。
 
 ## 詳細
 
-Next.js で開発して,vercel でデプロイしてます.
-RSC(React Server Component)について学んでみたかったため,App Router を採用しています.
-また,GitHubAPI(v4)で GitHub の草情報を取ってきて表示しています.
-このサイトについて,詳しくは Qiita の記事にまとめる予定です.
+Next.js で開発して、vercel でデプロイしてます。
+RSC(React Server Component)について学んでみたかったため、App Router を採用しています。
+また、GitHubAPI(v4)で GitHub の草情報を取ってきて表示しています。
+このサイトについて、詳しくは Qiita の記事にまとめる予定です。
 
 ## 起動方法
 
