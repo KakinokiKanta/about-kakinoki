@@ -9,10 +9,35 @@ import { Suspense } from "react";
 import { Screen } from "./_loading/Screen";
 import { Loading } from "./_loading/Loading";
 
+const siteName = "柿木幹太のポートフォリオサイト";
+const description =
+  "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。";
+const url = "https://www.kakinoki-dev.com";
+
 export const metadata: Metadata = {
-  title: "柿木幹太のポートフォリオサイト",
-  description:
-    "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。",
+  title: siteName,
+  description: description,
+  // openGraph: {
+  //   title: siteName,
+  //   description,
+  //   url,
+  //   siteName,
+  //   locale: "ja_JP",
+  //   type: "website",
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: siteName,
+  //   description,
+  //   // site: "@サイト用アカウントのTwitterID",
+  //   creator: "kantan_IT",
+  // },
+  // verification: {
+  //   google: "サーチコンソールのやつ",
+  // },
+  // alternates: {
+  //   canonical: url,
+  // },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
