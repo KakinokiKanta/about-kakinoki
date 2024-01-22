@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="jp">
+    <html lang="ja">
       <body className={inter.className}>
         <Suspense fallback={<Screen />}>
           <Loading>
