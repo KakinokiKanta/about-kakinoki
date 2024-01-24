@@ -13,6 +13,17 @@ export const metadata: Metadata = {
   title: "柿木幹太のポートフォリオサイト",
   description:
     "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。",
+  openGraph: {
+    title: "柿木幹太のポートフォリオサイト",
+    description:
+      "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。",
+  },
+  twitter: {
+    title: "柿木幹太のポートフォリオサイト",
+    description:
+      "柿木幹太 (Kanta Kakinoki) のポートフォリオサイト。宮崎大学大学院の学生で、ソフトウェアエンジニアの卵です。",
+    card: "summary_large_image",
+  },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
