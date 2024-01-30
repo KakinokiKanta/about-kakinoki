@@ -7,7 +7,8 @@
 Next.js で開発して、vercel でデプロイしてます。
 RSC(React Server Component)について学んでみたかったため、App Router を採用しています。
 また、GitHubAPI(v4)で GitHub の草情報を取ってきて表示しています。
-このサイトについて、詳しくは Qiita の記事にまとめる予定です。
+このサイトについて、詳しくは Qiita の記事にまとめています。
+https://qiita.com/KakinokiKanta/items/d7b5140a6e67014ebb34
 
 ## 起動方法
 
