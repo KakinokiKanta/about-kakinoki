@@ -9,4 +9,9 @@ export const ICONS_PATH = [
     href: "https://github.com/KakinokiKanta",
     alt: "github icon",
   },
+  {
+    image: "/icons/qiita-logo.png",
+    href: "https://qiita.com/KakinokiKanta",
+    alt: "qiita icon",
+  },
 ];
