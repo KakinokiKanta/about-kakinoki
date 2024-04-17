@@ -1,4 +1,4 @@
-import styles from "@/components/Animation/BgAnimation/BgAnimation.module.css"
+import styles from "@/components/Animation/BgAnimation/BgAnimation.module.css";
 
 export const TECH_STACK_ICONS = [
   {
@@ -6,12 +6,12 @@ export const TECH_STACK_ICONS = [
     image: [
       "/stack_icons/c.svg",
       "/stack_icons/c-plusplus.svg",
-      "/stack_icons/c-sharp.svg",
-      "/stack_icons/unity.svg",
       "/stack_icons/python.svg",
       "/stack_icons/flask.svg",
       "/stack_icons/mysql-icon.svg",
       "/stack_icons/postgresql.svg",
+      "/stack_icons/gopher.svg",
+      "/stack_icons/gin.svg",
     ],
   },
   {
@@ -37,7 +37,7 @@ export const TECH_STACK_ICONS = [
       "/stack_icons/visual-studio-code.svg",
       "/stack_icons/slack-icon.svg",
       "/stack_icons/figma.svg",
-      "/stack_icons/vercel.svg",  
+      "/stack_icons/vercel.svg",
     ],
   },
 ];
