@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { inter } from "@/lib/fontManager";
 import { Header } from "@/components/Header";
@@ -40,6 +41,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <BgAnimation />
           <Footer />
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
