@@ -2,10 +2,16 @@
 
 import styles from "./Model.module.css";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdfjsWorkerSrc from "@/../pdf-worker";
+// import pdfjsWorkerSrc from "@/../pdf-worker";
 import { useState } from "react";
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerSrc;
+// pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerSrc;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.mjs",
+  import.meta.url,
+).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.mjs`;
 
 export const Model = () => {
   const [numPages, setNumPages] = useState(1);
