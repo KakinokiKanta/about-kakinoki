@@ -1,7 +1,7 @@
 export const ICONS_PATH = [
   {
     image: "/icons/x-logo-black.png",
-    href: "https://twitter.com/kantan_IT",
+    href: "https://x.com/Kakinoki47",
     alt: "x icon",
   },
   {
