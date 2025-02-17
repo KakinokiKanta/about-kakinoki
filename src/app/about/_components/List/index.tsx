@@ -10,7 +10,18 @@ type ListProps = {
 };
 
 export const List = (props: ListProps) => {
-  const listStyle = props.isAchieve ? styles.achieve : styles.qualification;
+  let listStyle: string;
+  switch (props.content) {
+    case "achieve":
+      listStyle = styles.achieve;
+      break;
+    case "qualification":
+      listStyle = styles.qualification;
+      break;
+    default:
+      listStyle = styles.presentation;
+      break;
+  }
 
   return (
     <section>

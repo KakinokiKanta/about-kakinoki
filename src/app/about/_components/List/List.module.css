@@ -32,3 +32,14 @@
   margin-bottom: 1rem;
   font-size: 18px;
 }
+
+.presentation {
+  background-image: url(/icons/presentation-solid.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto 20px;
+  padding-left: 40px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
