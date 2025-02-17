@@ -8,7 +8,7 @@ export const HomeAbout = () => {
       <div className={styles.container}>
         <H2Animation title="ABOUT ME" animation="fadein" />
         <p>IT系のメガベンチャー企業で働く予定のソフトウェアエンジニアです。</p>
-        <p>プログラミングは大学から始め、最近はGo言語の勉強中。</p>
+        <p>プログラミングは大学から始め、最近はサーバーサイドの勉強中。</p>
         <p>
           学生時代は主に、研究、講義、ロボコン、アルバイト、ボランティアなどを行っていました。
         </p>
