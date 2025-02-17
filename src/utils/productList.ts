@@ -30,6 +30,49 @@ export const PRODUCT_LIST = [
     ],
   },
   {
+    title: "ロボコン2025 走行体システム",
+    image: "/products_imgs/robocon2024_sys/etrobo2024.jpg",
+    alt: "robocon2024 main system product",
+    description: [
+      "このシステムは、ETロボコン2024大会で開発したロボット側のシステムです。C++とPythonを用いてラズパイ上に実装しました。",
+      "2023年の走行体システムと走行制御の面では大きな違いはありません。設計面でシングルトンパターンを採用したことで、モーターやセンサー制御用のインスタンスを使いまわすようにしました。",
+      "面白い取り組みとして、Issueや走行調整のスケジューリング等をNotionで行うことで、データ管理を一元化しました。",
+    ],
+    tools: [
+      "C++",
+      "Python",
+      "OpenCV",
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "Raspberry Pi",
+      "Notion",
+    ],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2024",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
+    title: "ロボコン2025 データ転送システム",
+    image: "/products_imgs/robocon2024_camera/game_2024.png",
+    alt: "robocon2024 camera system product",
+    description: [
+      "このシステムは、ETロボコン2024大会で開発したデータ転送システムです。",
+      "ETロボコン2024大会では、走行体に搭載されたラズパイのカメラで撮影した写真を、ロボコン運営が用意した競技システムに転送する必要があります。そこで、走行体から競技システムへのデータ転送を仲介するためのシステムを実装しました。",
+      "このシステムは、PythonとFlaskを用いてWeb APIの形式で実装しています。",
+    ],
+    tools: ["Python", "Flask", "Git", "GitHub", "GitHub Actions"],
+    links: [
+      {
+        href: "https://github.com/KatLab-MiyazakiUniv/etrobocon2024-camera-system",
+        kinds: "GitHub",
+      },
+    ],
+  },
+  {
     title: "Communication Leading Interface",
     image: "/products_imgs/dena_autumn/dena_CLI_ans.png",
     alt: "dena autumn hackason product",
