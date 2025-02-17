@@ -6,7 +6,7 @@ import styles from "./List.module.css";
 type ListProps = {
   title: string;
   list: (string | string[])[];
-  isAchieve: boolean;
+  content: string;
 };
 
 export const List = (props: ListProps) => {

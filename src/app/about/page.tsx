@@ -1,3 +1,4 @@
+import { title } from "process";
 import { AboutMe } from "./_components/AboutMe";
 import { List } from "./_components/List";
 import { Skills } from "./_components/Skills";
@@ -24,14 +25,17 @@ const About = () => {
     ],
   };
 
-  const Thesis = [
-    "2025/02 : Springer Singapore, Genetic and Evolutionary Computing 論文誌投稿",
-    "2024/10 : 宮崎大学工学部紀要 論文誌投稿",
-    "2024/08 : International Conference on Genetic and Evolutionary Computing (ICGEC-2024) 学会発表",
-    "2024/03 : Journal of Robotics, Networking and Artificial Life (JRNAL) 論文誌投稿",
-    "2024/02 : International Conference on Artificial Life and Robotics (ICAROB) 学会発表",
-    "2023/09 : 電気・情報関係学会九州支部連合大会 学会発表",
-  ];
+  const THESIS = {
+    title: "THESIS",
+    list: [
+      "2025/02 : Springer Singapore, Genetic and Evolutionary Computing 論文誌投稿",
+      "2024/10 : 宮崎大学工学部紀要 論文誌投稿",
+      "2024/08 : International Conference on Genetic and Evolutionary Computing (ICGEC-2024) 学会発表",
+      "2024/03 : Journal of Robotics, Networking and Artificial Life (JRNAL) 論文誌投稿",
+      "2024/02 : International Conference on Artificial Life and Robotics (ICAROB) 学会発表",
+      "2023/09 : 電気・情報関係学会九州支部連合大会 学会発表",
+    ],
+  };
 
   const EXAMS = {
     title: "EXAMS",
@@ -80,8 +84,9 @@ const About = () => {
   return (
     <main>
       <AboutMe />
-      <List {...ACHIEVE} isAchieve={true} />
-      <List {...EXAMS} isAchieve={false} />
+      <List {...ACHIEVE} content="achieve" />
+      <List {...THESIS} content="presentation" />
+      <List {...EXAMS} content="qualification" />
       <Skills skill={SKILLS} />
     </main>
   );
