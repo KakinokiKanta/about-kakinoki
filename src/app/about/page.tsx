@@ -47,37 +47,37 @@ const About = () => {
       icon: "/stack_icons/typescript-icon.svg",
       alt: "skill stack icon typescript",
       h3: "TypeScript",
-      years: "1",
+      years: "2",
       description:
         "Next.js(React)を用いたWebフロントエンド開発で使用しています。このポートフォリオサイトは、Next.jsを用いて開発しました。それ以外でも、インターンシップやハッカソンなどで使用経験があります。今後はSeleniumやStorybookなども使用していきたいと考えています。",
       relatedSkills: ["JavaScript", "React", "Next.js", "Vercel", "Bootstrap"],
     },
     {
+      icon: "/stack_icons/gopher.svg",
+      alt: "skill stack icon go",
+      h3: "Go",
+      years: "1",
+      description:
+        "まだまだ使用経験や学びは浅いものの、現在最も積極的に学んでいる言語です。Go言語の学習を通して、レイヤーアーキテクチャやクリーンアーキテクチャについても学びました。個人開発やハッカソンで使用経験があります。今後はWebSocket通信を実装してみたいと考えています。",
+      relatedSkills: ["Gin"],
+    },
+    {
       icon: "/stack_icons/c-plusplus.svg",
       alt: "skill stack icon C++",
       h3: "C++",
-      years: "3",
+      years: "4",
       description:
-        "主にETロボコンで走行体(ロボット)の制御プログラム実装に使用しています。また、最近はほとんどできていませんが、競技プログラミング(AtCoder)でも使用しています。",
+        "主にETロボコンで走行体(ロボット)の制御プログラム実装に使用しています。また、最近はほとんどできていませんが、競技プログラミング(AtCoder)でも使用していました。",
       relatedSkills: ["C"],
     },
     {
-      icon: "/stack_icons/python.svg",
-      alt: "skill stack icon python",
-      h3: "Python",
-      years: "3",
+      icon: "/stack_icons/c.svg",
+      alt: "skill stack icon c",
+      h3: "C",
+      years: "6",
       description:
-        "研究において、ツールの実装に用いています。また、ETロボコンではWebカメラを用いた競技が存在し、そのシステムの実装でも使用しています。",
-      relatedSkills: ["Flask", "OpenCV", "機械学習"],
-    },
-    {
-      icon: "/stack_icons/css-3.svg",
-      alt: "skill stack icon html",
-      h3: "CSS",
-      years: "3",
-      description:
-        "このポートフォリオサイトを作成するにあたって、CSSアニメーションについて学びながら実装しました。今後も引き続きCSSアニメーションについて学び続けたいと思います。",
-      relatedSkills: ["HTML"],
+        "大学の講義は、主にC言語を用いて実装を行っていました。学部時代には、演習の授業でクライアントサーバシステムをチーム開発しました。",
+      relatedSkills: [],
     },
   ];
 
