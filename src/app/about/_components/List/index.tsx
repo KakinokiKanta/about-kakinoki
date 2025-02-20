@@ -6,11 +6,22 @@ import styles from "./List.module.css";
 type ListProps = {
   title: string;
   list: (string | string[])[];
-  isAchieve: boolean;
+  content: string;
 };
 
 export const List = (props: ListProps) => {
-  const listStyle = props.isAchieve ? styles.achieve : styles.qualification;
+  let listStyle: string;
+  switch (props.content) {
+    case "achieve":
+      listStyle = styles.achieve;
+      break;
+    case "qualification":
+      listStyle = styles.qualification;
+      break;
+    default:
+      listStyle = styles.presentation;
+      break;
+  }
 
   return (
     <section>
