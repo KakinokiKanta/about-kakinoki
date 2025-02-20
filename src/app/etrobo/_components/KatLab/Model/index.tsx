@@ -25,7 +25,7 @@ export const Model = () => {
       </h3>
       <div className={styles.flame}>
         <Document
-          file="/robocon/ADV_063_KatLab.pdf"
+          file="/robocon/KatLab_2024.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           {Array.from({ length: numPages }, (_, index) => (
